@@ -79,7 +79,7 @@ const PROJECT_1_EN: Project = {
   title: "UW Pathway",
   subtitle: "Redefining Course Discovery Through Skill-Based Planning",
   description: "Helping University of Washington students confidently choose courses aligned with career goals and skill development.",
-  homeDescription: "A skill-based course discovery platform that bridges academic planning and career outcomes by connecting courses, skills, and jobs.",
+  homeDescription: "A skill-based course discovery platform connecting Courses · Skills · Careers · Jobs to help UW students plan for the future.",
   category: ["UX Research", "IA", "EdTech"],
   overview: {
     role: "UX Research · Information Architecture · Interaction Design · Prototyping",
@@ -91,54 +91,65 @@ const PROJECT_1_EN: Project = {
   sections: [
     {
       id: "problem",
-      title: "2. The Problem",
+      title: "The Problem",
       content: [
-        "University students struggle to connect coursework with long-term career goals.",
-        "Key challenges: Course descriptions focus on academic content, not practical skills; Information is fragmented across multiple platforms; Students cannot clearly see course-to-career pathways; High decision anxiety, especially for freshmen and interdisciplinary students."
+        "Key Challenges",
+        "——————",
+        "• Course descriptions focus on academic content, not practical skills",
+        "• Information is fragmented across multiple platforms",
+        "• Students cannot clearly see course-to-career pathways",
+        "• High decision anxiety, especially for freshmen and interdisciplinary students"
       ],
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["User journey map or visual summary of student pain points showing confusion, fragmented tools, and stress during planning."]
+      captions: ["User journey map or visual summary of student pain points"]
     },
     {
       id: "research",
-      title: "3. Research & Insights",
+      title: "Research & Insights",
       content: [
-        "Methods: Semi-structured interviews with UW students; Competitive analysis of academic and skill-based platforms.",
-        "Key Insights: Students think in terms of skills, not course codes; Fragmented systems increase cognitive overload; Students lack tools to compare long-term career value; Peer and alumni experiences are highly trusted."
+        "Methods",
+        "• Semi-structured interviews with UW students",
+        "• Competitive analysis of academic and skill-based platforms",
+        "Key Insights",
+        "• Students think in terms of skills, not course codes",
+        "• Fragmented systems increase cognitive overload",
+        "• Students lack tools to compare long-term career value",
+        "• Peer and alumni experiences are highly trusted"
       ],
       imageType: "centered",
       images: ["https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600"],
-      captions: ["Photo of interview process or research setup (small and subtle)"]
+      captions: ["Photo of interview process"]
     },
     {
       id: "opportunity",
-      title: "4. Product Opportunity",
+      title: "Product Opportunity",
       content: [
-        "Existing tools support either academic registration or external skill development, but none centralize: Courses, Skills, Careers, and Jobs.",
-        "Opportunity: Create a unified, skill-driven academic planning experience."
+        "Existing tools support either academic registration or external skill development",
+        "Gap: No centralized system connecting Courses · Skills · Careers · Jobs",
+        "Opportunity: Create a unified, skill-driven academic planning experience"
       ],
       imageType: "side-by-side",
       images: [
         "https://images.unsplash.com/photo-1454165833767-027ffea70250?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600"
       ],
-      captions: ["Left: Screenshot snippets of competitor platforms", "Right: Short comparison visual or opportunity mapping diagram"]
+      captions: ["Left: Competitor screenshots", "Right: Opportunity mapping diagram"]
     },
     {
       id: "solution",
-      title: "5. From Insights to Solution",
+      title: "Ideation & Solution",
       content: "We reframed course discovery around skills and career pathways.",
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1544391682-1a55b9deaad3?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Early brainstorming sketches (multiple low-fidelity ideas). We explored multiple solution directions before converging on a skill-centered discovery model."]
+      captions: ["Brainstorm sketches. Caption: 'We explored multiple solution directions before converging on a skill-centered discovery model.'"]
     },
     {
       id: "architecture",
-      title: "6. Information Architecture",
+      title: "Information Architecture",
       content: [
-        "To support different exploration behaviors, I designed a multi-entry navigation system: Majors · Skills · Careers · Courses · Jobs.",
-        "Each course contains structured skill tags, enabling relational discovery."
+        "Multi-entry navigation: Majors · Skills · Careers · Courses · Jobs",
+        "Each course contains structured skill tags for relational discovery"
       ],
       imageType: "grid",
       images: [
@@ -146,39 +157,39 @@ const PROJECT_1_EN: Project = {
         "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=600"
       ],
-      captions: ["Sitemap or system architecture diagram", "User flow diagram", "Example of skill tagging structure"]
+      captions: ["[IMAGE PLACEHOLDER – FULL WIDTH] Sitemap", "[IMAGE PLACEHOLDER – HALF WIDTH LEFT] User flow", "[IMAGE PLACEHOLDER – HALF WIDTH RIGHT] Skill tagging structure"]
     },
     {
       id: "prototype",
-      title: "7. Low-Fidelity Prototype",
-      content: "We tested structural clarity before moving into visual refinement.",
+      title: "Low-Fidelity Prototype",
+      content: "Tested structural clarity before visual refinement.",
       imageType: "side-by-side",
       images: [
         "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1586717796440-9620ed7a06a1?auto=format&fit=crop&q=80&w=600"
       ],
-      captions: [
-        "Hypothesis: If skills are visible as tags, students can evaluate relevance faster.",
-        "Testing structural hierarchy and entry points."
-      ]
+      captions: ["[IMAGE PLACEHOLDER – SIDE-BY-SIDE] Low-fidelity wireframes (2–3 screens). Caption: 'Hypothesis: If skills are visible as tags, students can evaluate relevance faster.'"]
     },
     {
       id: "testing",
-      title: "8. Usability Testing & Iteration",
+      title: "Usability Testing & Iteration",
       content: [
-        "Testing Participants: Freshman · Junior · Graduate student.",
-        "Key Findings: Navigation labels were unclear; Users wanted job comparison tools; Career pages lacked salary and progression data."
+        "Participants: Freshman · Junior · Graduate student",
+        "Key Findings:",
+        "• Navigation labels unclear",
+        "• Users wanted job comparison tools",
+        "• Career pages lacked salary/progression data"
       ],
       imageType: "side-by-side",
       images: [
         "https://images.unsplash.com/photo-1618761767630-010461622312?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1618761767660-f4633b499b9a?auto=format&fit=crop&q=80&w=600"
       ],
-      captions: ["Left: Original interface", "Right: Revised interface (Renamed labels, added salary data, and introduced Similar Jobs comparison feature)"]
+      captions: ["[IMAGE PLACEHOLDER – SIDE-BY-SIDE BEFORE & AFTER]. Caption: 'Renamed labels, added salary data, introduced Similar Jobs comparison feature.'"]
     },
     {
       id: "final",
-      title: "9. Final Design",
+      title: "Final Design",
       content: "UW Pathway enables students to: Discover courses by skill relevance; Understand career outcomes; Compare job paths; Plan confidently.",
       imageType: "grid",
       images: [
@@ -186,14 +197,17 @@ const PROJECT_1_EN: Project = {
         "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=1200",
         "https://images.unsplash.com/photo-1611162618071-b39a2ad055fb?auto=format&fit=crop&q=80&w=1200"
       ],
-      captions: ["High-fidelity main screen", "Skill filter screen & Learning path visualization", "Career/job page"]
+      captions: ["[IMAGE PLACEHOLDER – FULL WIDTH HERO]", "Skill filter screen", "Learning path visualization", "Career/job page"]
     },
     {
       id: "reflection",
-      title: "10. Reflection",
+      title: "Reflection",
       content: [
-        "This project strengthened my ability to: Translate research into structural product decisions; Reduce cognitive overload through information architecture; Design comparison-driven decision tools; Balance UX clarity with product strategy.",
-        "Future directions: Personalized recommendations; AI-based skill gap analysis; Advisor integration."
+        "• Translating research into structural product decisions",
+        "• Reducing cognitive overload via information architecture",
+        "• Designing comparison-driven decision tools",
+        "• Balancing UX clarity with product strategy",
+        "Future Directions: AI-based recommendations, skill gap analysis, advisor integration"
       ]
     }
   ]
@@ -207,101 +221,96 @@ const PROJECT_2_EN: Project = {
   homeDescription: "Redesigning an open-source coding education platform to prioritize process and accessibility for learners of all backgrounds.",
   category: ["Accessibility", "Inclusive Design", "Open Source"],
   overview: {
-    platform: "Wordplay (Open-source coding education website)",
-    role: "UX Designer (Volunteer Contributor)",
+    platform: "Wordplay (Open-source coding education)",
+    role: "UX Designer (Volunteer)",
     focus: "Accessibility · Interaction Design · Inclusive Design",
-    tools: "Figma · GitHub Issue Tracking",
-    collaboration: "Worked directly with Project Lead",
+    tools: "Figma · GitHub",
+    collaboration: "Project Lead",
     team: "Open-source contributors",
     duration: "Ongoing",
     sector: "Education",
-    text: "Wordplay aims to make programming accessible to learners of all ages, backgrounds, and locations. However, usability and accessibility barriers limited the platform’s inclusiveness. My role focused on redesigning key features and improving accessibility for keyboard and screen reader users."
+    text: "Wordplay aims to make programming accessible to learners of all ages, backgrounds, and locations. My role focused on redesigning key features and improving accessibility for keyboard and screen reader users."
   },
   sections: [
     {
       id: "problem",
-      title: "2. The Problem",
+      title: "The Problem",
       content: [
-        "Despite its mission, the platform had several barriers: Unclear navigation structure; Cumbersome interface layout; Heavy reliance on hover interactions; Limited keyboard support; Incomplete screen reader compatibility; Limited visual diversity (e.g., single emoji skin tone).",
-        "These issues disproportionately affected keyboard-only users, screen reader users, visually impaired learners, and users seeking representation."
+        "Key Challenges",
+        "——————",
+        "• Unclear navigation structure",
+        "• Cumbersome interface layout",
+        "• Heavy reliance on hover interactions",
+        "• Limited keyboard support & screen reader compatibility",
+        "• Limited visual diversity (single emoji skin tone)"
       ],
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Visual summary of usability issues or annotated screenshot of original interface."]
-    },
-    {
-      id: "approach",
-      title: "3. My Approach",
-      content: "Selected real GitHub issues to address; Prioritized high-impact accessibility gaps; Designed in Figma; Followed WCAG accessibility principles; Iterated through stakeholder review; Validated accessibility via keyboard and screen reader checks."
+      captions: ["Annotated original interface screenshot"]
     },
     {
       id: "feature-1",
       title: "Feature 1: Character Photo Import",
       content: [
-        "To increase character diversity, we introduced a photo import feature.",
-        "Design Considerations: File size validation; Image cropping capability; Keyboard navigability; Screen reader clarity; Clear button labeling.",
-        "Accessibility Improvements: All controls accessible via tab order; Descriptive ARIA labels; Focus state visibility; Screen reader feedback for upload states."
+        "File size validation, image cropping",
+        "Keyboard navigability, screen reader feedback"
       ],
       imageType: "side-by-side",
       images: [
         "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=600"
       ],
-      captions: ["High-fidelity Photo Import interface", "Cropping interaction & Accessibility annotations (focus states + ARIA labels)"]
+      captions: ["[IMAGE PLACEHOLDER – FULL WIDTH]", "[IMAGE PLACEHOLDER – SIDE-BY-SIDE] Before/After"]
     },
     {
       id: "feature-2",
       title: "Feature 2: Quick Character Search & Favorites",
       content: [
-        "Each character includes descriptive tags for searchability.",
-        "Original Issues: Discovery relied on hover interactions; No structured filtering; No way to save preferred characters.",
-        "Improvements: Keyword-based filtering system; Category tagging structure; “Favorite Character” functionality; Dedicated browsing area (no hover dependency); Clear favorite/unfavorite states; Fully keyboard accessible interaction."
+        "Category tagging, keyword search",
+        "Dedicated browsing area, fully keyboard accessible"
       ],
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1618761767630-010461622312?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Redesigned Character Search & Browsing Interface"]
+      captions: ["[IMAGE PLACEHOLDER – FULL WIDTH]"]
     },
     {
       id: "feature-3",
-      title: "Feature 3: Improving the “place()” Function",
-      content: [
-        "The original place() function lacked clarity and explanation. Users struggled to understand: Parameter meaning; Directional logic; Object positioning behavior.",
-        "Improvements: Added inline text explanations; Introduced direction selector; Clarified parameter labels; Improved input accessibility."
-      ],
+      title: "Feature 3: Improving the place() Function",
+      content: "Added text explanations, direction selector, improved accessibility",
       imageType: "side-by-side",
       images: [
         "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=600"
       ],
-      captions: ["Left: Original “place()” interface", "Right: Redesigned version with explanations and direction selector"]
+      captions: ["[IMAGE PLACEHOLDER – SIDE-BY-SIDE] Before/After"]
     },
     {
       id: "feature-4",
       title: "Feature 4: Emoji Skin Tone Options",
       content: [
-        "To improve representation and inclusivity, I designed a skin tone selection feature.",
-        "Process: Identified all emoji usage across platform; Categorized changeable emoji types; Designed skin tone selection workflow; Created keyboard interaction mapping; Added screen reader voice guidance.",
-        "Accessibility Enhancements: Logical tab flow; Clear selection states; Non-color dependent indicators; Screen reader output confirmation."
+        "Inclusive skin tone selection workflow",
+        "Keyboard mapping & screen reader guidance"
       ],
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Emoji skin tone selection workflow"]
+      captions: ["[IMAGE PLACEHOLDER – FULL WIDTH]", "[IMAGE PLACEHOLDER – SMALL DETAIL]"]
+    },
+    {
+      id: "localization",
+      title: "Chinese Localization",
+      content: "Interface translation with accessibility preserved",
+      imageType: "small",
+      images: ["https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=400"],
+      captions: ["[IMAGE PLACEHOLDER – SMALL IMAGE]"]
     },
     {
       id: "impact",
-      title: "5. Impact",
+      title: "Impact & Reflection",
       content: [
-        "The redesign improved: Navigation clarity; Feature discoverability; Keyboard-only usability; Screen reader compatibility; Representation and inclusivity.",
-        "Chinese Localization: I also contributed to Chinese localization to improve clarity and cultural relevance."
-      ],
-      imageType: "small",
-      images: ["https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=400"],
-      captions: ["Before/After localization example"]
-    },
-    {
-      id: "reflection",
-      title: "6. Reflection",
-      content: "Key lessons: Accessibility must be designed from the start; Hover-based interactions exclude users; Inclusive design benefits all users; Iterative feedback improves solution quality; Small UI decisions significantly affect usability. Wordplay strengthened my commitment to building accessible and inclusive digital experiences."
+        "• Improved navigation, discoverability, keyboard & screen reader usability",
+        "• Increased inclusivity & representation",
+        "• Lessons: accessibility must be considered from the start; iterative stakeholder feedback improves outcomes"
+      ]
     }
   ]
 };
@@ -309,48 +318,54 @@ const PROJECT_2_EN: Project = {
 const PROJECT_3_EN: Project = {
   id: "urban-safety",
   title: "Urban Safety",
-  subtitle: "Enhancing Urban Safety Awareness Through Privacy-Preserving Data Visualization",
+  subtitle: "Privacy-Preserving City Safety Visualization",
   description: "Helping residents access safety information while protecting individual privacy.",
   homeDescription: "A privacy-first dashboard that provides safety transparency to residents without exposing sensitive individual data.",
   category: ["Data Viz", "Privacy", "Civic Tech"],
   overview: {
-    domain: "Urban Data Visualization · UX",
-    role: "User Research · Information Architecture · Data Visualization · Privacy Strategy Design",
+    domain: "Urban Data Visualization / UX",
+    role: "User Research · Information Architecture · Data Visualization · Privacy Strategy",
     team: "4 members",
     duration: "7 weeks",
-    context: "Course Project (INFO 200)",
+    context: "INFO 200 Course Project",
     sector: "Civic Tech",
     text: "Urban Safety is a privacy-conscious city safety visualization platform designed to help residents understand neighborhood safety trends without exposing sensitive individual data."
   },
   sections: [
     {
       id: "problem",
-      title: "2. Problem Context",
+      title: "Problem Context",
       content: [
-        "Many residents want to understand city safety conditions. However, existing platforms often: Show precise crime or homeless locations; Risk violating individual privacy; Reinforce harmful bias; Create unnecessary anxiety; Overload users with detailed event data.",
-        "The key design challenge: How might we provide meaningful safety transparency without exposing personal or sensitive information?"
+        "Residents want city safety info",
+        "Existing platforms often show precise crime/homeless locations → privacy risks",
+        "High data overload, unnecessary anxiety",
+        "Design challenge: transparency without exposing individuals"
       ],
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Annotated screenshot examples of typical precise-location safety apps (highlighting privacy risks)."]
+      captions: ["Annotated screenshot of privacy risks"]
     },
     {
       id: "research",
-      title: "3. Research & Insights",
+      title: "Research & Insights",
       content: [
-        "Research Methods: Interviews with students and local residents; Survey on safety information needs; Competitive analysis (e.g., Citizen App, Nextdoor); Stakeholder mapping.",
-        "Key Insights: Users want quick risk awareness, not event-by-event detail; Precise pinpoints increase privacy risks and bias; High-level trend visibility builds trust; Customizable filters reduce anxiety and overload."
+        "Methods: Interviews, survey, competitive analysis, stakeholder mapping",
+        "Key Insights:",
+        "• Users want quick trend-level awareness",
+        "• Precise pinpoints increase privacy risk & bias",
+        "• Trend visibility builds trust",
+        "• Filters reduce overload"
       ],
       callout: "Data presentation shapes public perception.",
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1551288049-bbbda5366391?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Affinity diagram or insight clustering board & Stakeholder map (Residents, City Planners, Vulnerable Populations)."]
+      captions: ["[IMAGE PLACEHOLDER – FULL WIDTH] Affinity diagram", "[IMAGE PLACEHOLDER – SMALL IMAGE] Stakeholder map"]
     },
     {
       id: "strategy",
-      title: "4. Design Strategy",
+      title: "Design Strategy",
       content: [
-        "We adopted a Privacy-by-Design approach. Instead of precise location pins, we introduced: Blurred area indicators; Broad zone safety visualization; Layered data abstraction; Trend-based risk indication.",
+        "Privacy-by-Design: blurred zones, layered data abstraction, trend-based indicators",
         "The goal: shift focus from individuals to community-level patterns."
       ],
       imageType: "side-by-side",
@@ -358,69 +373,60 @@ const PROJECT_3_EN: Project = {
         "https://images.unsplash.com/photo-1569336415962-a4bd9f6dfc0f?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&q=80&w=600"
       ],
-      captions: ["Left: Traditional precise pin-based map", "Right: Early blurred-zone concept sketch"]
+      captions: ["Left: Traditional precise pin map", "Right: Blurred-zone prototype sketch"]
     },
     {
       id: "ideation",
-      title: "5. Ideation & Low-Fidelity Prototyping",
-      content: "We explored multiple visualization directions: Circle-based abstraction; Heatmap layers; Gradient intensity mapping; Filter-first dashboard layout.",
+      title: "Low-Fidelity Prototyping & Interaction Design",
+      content: [
+        "Circle abstraction, heatmaps, gradient intensity",
+        "Filter-first dashboard layout"
+      ],
       imageType: "grid",
       images: [
         "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1558486012-817176f84c6d?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80&w=600"
       ],
-      captions: ["Low-fidelity map exploration sketches", "Different visualization experiments (circles, heatmaps, gradients)"]
-    },
-    {
-      id: "interaction",
-      title: "6. Interaction & Filtering Design",
-      content: [
-        "To reduce overload and increase control, we implemented: Customizable event filters; Toggleable data layers; Time-based filtering; Risk-level simplification.",
-        "The design ensures users see only relevant information."
-      ],
-      imageType: "full",
-      images: ["https://images.unsplash.com/photo-1551288049-bbbda5366391?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Filtering interface screen & interaction detail (filter toggle)."]
+      captions: ["[IMAGE PLACEHOLDER – FULL WIDTH] Low-fidelity map sketches", "[IMAGE PLACEHOLDER – GRID 3 IMAGES] Different visualization experiments", "[IMAGE PLACEHOLDER – FULL WIDTH] Filtering interface", "[IMAGE PLACEHOLDER – SMALL DETAIL] Filter toggle interaction"]
     },
     {
       id: "final",
-      title: "7. Final Design",
-      content: "Urban Safety presents safety information using: Blurred geographic regions instead of exact points; Layered visual hierarchy; Soft visual tones to reduce alarmism; Trend-focused data summaries. The system encourages awareness without panic.",
+      title: "Final Design",
+      content: [
+        "Blurred geographic regions instead of exact points",
+        "Layered visual hierarchy, soft tones, trend-focused summaries",
+        "Encourages awareness without panic"
+      ],
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1493134795711-470dd1485924?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Final high-fidelity map screen with blurred zones and summary panel."]
+      captions: ["[IMAGE PLACEHOLDER – FULL WIDTH HERO]", "[IMAGE PLACEHOLDER – SIDE-BY-SIDE] Blurred map / Data summary panel", "[IMAGE PLACEHOLDER – SMALL IMAGE] Legend close-up"]
     },
     {
       id: "testing",
-      title: "8. User Testing & Validation",
+      title: "User Testing & Validation",
       content: [
-        "We tested: Perceived trustworthiness; Anxiety levels; Information clarity; Privacy perception.",
-        "Findings: Users felt the blurred visualization protected dignity; Trend-based summaries were preferred over raw event lists; The softer visual style reduced fear."
+        "Metrics: trustworthiness, anxiety, clarity, privacy perception",
+        "Findings: blurred visualization protects dignity; trend summaries preferred; soft visual style reduces fear"
       ],
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["User feedback summary visualization or annotated prototype feedback."]
+      captions: ["[IMAGE PLACEHOLDER – FULL WIDTH] User feedback visualization"]
     },
     {
       id: "impact",
-      title: "9. Impact",
-      content: "The final prototype: Increased perceived trust; Reduced privacy concerns; Maintained functional safety awareness; Avoided reinforcing bias toward vulnerable populations. The design demonstrates how data transparency and human dignity can coexist."
-    },
-    {
-      id: "reflection",
-      title: "10. Reflection",
+      title: "Impact & Reflection",
       content: [
-        "This project strengthened my understanding of: Ethical data visualization; Privacy-aware interaction design; Social responsibility in UX; Stakeholder trade-offs in civic products.",
-        "I learned that: Design is not only about clarity — it is about responsibility.",
-        "Future iterations could include: Real-time updates; Predictive safety modeling; Community feedback integration; Continued privacy safeguards."
+        "• Increased perceived trust",
+        "• Reduced privacy concerns",
+        "• Maintained safety awareness",
+        "• Lessons: ethical data visualization, privacy-aware design, social responsibility, stakeholder trade-offs"
       ]
     }
   ]
 };
 
-// Simplified translation helper: for brevity in this file, I'll translate the main structure and key headings.
-// In a real production app, all strings in PROJECT_X_EN would have a counterpart in PROJECT_X_ZH.
+// Simplified translation helper:
 const PROJECT_1_ZH: Project = {
   ...PROJECT_1_EN,
   title: "UW Pathway (华大课程规划)",
@@ -429,7 +435,7 @@ const PROJECT_1_ZH: Project = {
   homeDescription: "一个以技能为核心的课程发现平台，旨在为华大（UW）学生搭建学术规划与职业发展的桥梁。",
   sections: PROJECT_1_EN.sections.map(s => ({
     ...s,
-    title: s.title.replace("The Problem", "问题背景").replace("Research & Insights", "研究与洞察").replace("Opportunity", "产品机会").replace("Solution", "从洞察到方案").replace("Architecture", "信息架构").replace("Prototype", "低保真原型").replace("Testing", "可用性测试").replace("Final Design", "最终设计").replace("Reflection", "项目反思")
+    title: s.title.replace("The Problem", "问题背景").replace("Research & Insights", "研究与洞察").replace("Product Opportunity", "产品机会").replace("Ideation & Solution", "构思与方案").replace("Information Architecture", "信息架构").replace("Low-Fidelity Prototype", "低保真原型").replace("Usability Testing & Iteration", "可用性测试").replace("Final Design", "最终设计").replace("Reflection", "项目总结")
   }))
 };
 
@@ -441,7 +447,7 @@ const PROJECT_2_ZH: Project = {
   homeDescription: "重新设计开源编程平台，为全球学习者提供完整的无障碍支持。",
   sections: PROJECT_2_EN.sections.map(s => ({
     ...s,
-    title: s.title.replace("The Problem", "问题定义").replace("Approach", "设计方法").replace("Feature", "功能改进").replace("Impact", "项目影响力").replace("Reflection", "设计总结")
+    title: s.title.replace("The Problem", "问题定义").replace("Feature", "功能改进").replace("Impact & Reflection", "影响力与总结")
   }))
 };
 
@@ -453,7 +459,7 @@ const PROJECT_3_ZH: Project = {
   homeDescription: "一个注重隐私保护的城市安全仪表盘，通过模糊区域可视化趋势，防止偏见。",
   sections: PROJECT_3_EN.sections.map(s => ({
     ...s,
-    title: s.title.replace("Context", "背景").replace("Research", "研究").replace("Strategy", "策略").replace("Ideation", "构思").replace("Interaction", "交互").replace("Final", "最终").replace("Testing", "测试").replace("Impact", "影响").replace("Reflection", "总结")
+    title: s.title.replace("Problem Context", "问题背景").replace("Research & Insights", "研究洞察").replace("Design Strategy", "设计策略").replace("Low-Fidelity Prototyping & Interaction Design", "原型与交互").replace("Final Design", "最终设计").replace("User Testing & Validation", "测试验证").replace("Impact & Reflection", "影响与反思")
   }))
 };
 

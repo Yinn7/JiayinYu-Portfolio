@@ -12,7 +12,11 @@ const App: React.FC = () => {
   const [currentHash, setCurrentHash] = useState(window.location.hash);
 
   useEffect(() => {
-    const handleHashChange = () => setCurrentHash(window.location.hash);
+    const handleHashChange = () => {
+      setCurrentHash(window.location.hash);
+      // Scroll to top on every navigation
+      window.scrollTo(0, 0);
+    };
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
