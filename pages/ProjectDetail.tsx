@@ -25,24 +25,47 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
 
     const refs = sectionRefs.current;
     Object.values(refs).forEach((ref) => {
-      if (ref instanceof Element) observer.observe(ref);
+      if (ref) observer.observe(ref as Element);
     });
 
     return () => {
       Object.values(refs).forEach((ref) => {
-        if (ref instanceof Element) observer.unobserve(ref);
+        if (ref) observer.unobserve(ref as Element);
       });
     };
   }, [project]);
+
+  const renderContent = (content: string | string[]) => {
+    const lines = Array.isArray(content) ? content : [content];
+    return lines.map((line, i) => {
+      if (line === "——————") {
+        return <div key={i} className="h-px bg-[#1A1A1A]/10 my-4" />;
+      }
+      if (line.startsWith("•")) {
+        return (
+          <div key={i} className="flex items-start space-x-3 mb-2">
+            <span className="opacity-40 mt-1">•</span>
+            <span className="flex-1">{line.substring(1).trim()}</span>
+          </div>
+        );
+      }
+      return (
+        <p key={i} className="mb-2 last:mb-0 leading-tight">
+          {line}
+        </p>
+      );
+    });
+  };
 
   const renderImages = (section: Section) => {
     if (!section.images || section.images.length === 0) return null;
 
     switch (section.imageType) {
+      case 'hero':
       case 'full':
         return (
-          <div className="space-y-3 my-10">
-            <div className="w-full aspect-video bg-[#F5F4F2] overflow-hidden rounded-sm group">
+          <div className="space-y-4 my-10">
+            <div className="w-full aspect-video bg-[#F5F4F2] overflow-hidden rounded-lg group shadow-sm border border-[#F5F4F2]">
               <img 
                 src={section.images[0]} 
                 alt={section.title} 
@@ -58,8 +81,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
         );
       case 'centered':
         return (
-          <div className="space-y-3 my-10 flex flex-col items-center">
-            <div className="max-w-[700px] w-full aspect-[3/2] bg-[#F5F4F2] overflow-hidden rounded-sm group">
+          <div className="space-y-4 my-10 flex flex-col items-center">
+            <div className="max-w-[700px] w-full aspect-[3/2] bg-[#F5F4F2] overflow-hidden rounded-lg group shadow-sm">
               <img 
                 src={section.images[0]} 
                 alt={section.title} 
@@ -75,10 +98,10 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
         );
       case 'side-by-side':
         return (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
             {section.images.map((img, i) => (
               <div key={i} className="space-y-2">
-                <div className="w-full aspect-[4/3] bg-[#F5F4F2] overflow-hidden rounded-sm group">
+                <div className="w-full aspect-[4/3] bg-[#F5F4F2] overflow-hidden rounded-lg group shadow-sm">
                   <img 
                     src={img} 
                     alt={`${section.title} ${i}`} 
@@ -94,10 +117,10 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
         );
       case 'grid':
         return (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
             {section.images.map((img, i) => (
               <div key={i} className="space-y-2">
-                <div className="w-full aspect-square bg-[#F5F4F2] overflow-hidden rounded-sm group">
+                <div className="w-full aspect-square bg-[#F5F4F2] overflow-hidden rounded-lg group shadow-sm">
                   <img 
                     src={img} 
                     alt={`${section.title} ${i}`} 
@@ -113,8 +136,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
         );
       case 'small':
         return (
-          <div className="max-w-[400px] my-8">
-            <div className="aspect-[4/3] bg-[#F5F4F2] overflow-hidden rounded-sm group">
+          <div className="max-w-[400px] my-10">
+            <div className="aspect-[4/3] bg-[#F5F4F2] overflow-hidden rounded-lg group shadow-sm">
               <img 
                 src={section.images[0]} 
                 alt={section.title} 
@@ -122,7 +145,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
               />
             </div>
             {section.captions?.[0] && (
-              <p className="text-[11px] font-medium text-[#888] mt-2 tracking-wide uppercase leading-tight">{section.captions[0]}</p>
+              <p className="text-[11px] font-medium text-[#888] mt-3 tracking-wide uppercase leading-tight">{section.captions[0]}</p>
             )}
           </div>
         );
@@ -137,7 +160,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
       <aside className="hidden md:block w-72 shrink-0 pr-16 sticky top-32 h-fit">
         <div className="relative">
           <div className="absolute left-0 top-0 w-px h-full bg-[#F5F4F2]" />
-          <ul className="space-y-5 relative">
+          <ul className="space-y-6 relative">
             <li className="pl-8 relative">
               <button 
                 onClick={() => sectionRefs.current['overview']?.scrollIntoView({ behavior: 'smooth' })}
@@ -146,7 +169,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
                 Project Overview
               </button>
               {activeSection === 'overview' && (
-                <div className="absolute left-[-1.5px] top-1/2 -translate-y-1/2 w-[4px] h-[4px] bg-[#1A1A1A] rounded-full" />
+                <div className="absolute left-[-1.5px] top-1/2 -translate-y-1/2 w-[4px] h-[4px] bg-[#1A1A1A] rounded-full transition-all duration-500" />
               )}
             </li>
             {project.sections.map((s) => (
@@ -158,7 +181,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
                   {s.title}
                 </button>
                 {activeSection === s.id && (
-                  <div className="absolute left-[-1.5px] top-1/2 -translate-y-1/2 w-[4px] h-[4px] bg-[#1A1A1A] rounded-full" />
+                  <div className="absolute left-[-1.5px] top-1/2 -translate-y-1/2 w-[4px] h-[4px] bg-[#1A1A1A] rounded-full transition-all duration-500" />
                 )}
               </li>
             ))}
@@ -172,22 +195,22 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4 leading-[1.1]">
             {project.title}
           </h1>
-          <p className="text-xl md:text-2xl font-light text-[#666] mb-8 leading-tight">
+          <p className="text-xl md:text-2xl font-light text-[#666] mb-10 leading-snug">
             {project.subtitle}
           </p>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 py-8 border-y border-[#F5F4F2] mb-10">
+          <div className="bg-[#F5F4F2] rounded-2xl p-10 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10 mb-12">
             {Object.entries(project.overview).filter(([key]) => key !== 'text').map(([key, val]) => (
               <div key={key}>
-                <h5 className="text-[9px] uppercase tracking-[0.2em] font-bold mb-1 opacity-40">
+                <h5 className="text-[10px] uppercase tracking-[0.1em] font-bold mb-2 opacity-40">
                   {translations.projectLabels[key as keyof typeof translations.projectLabels] || key}
                 </h5>
-                <p className="text-[12px] font-bold leading-tight">{val as string}</p>
+                <p className="text-[13px] font-bold leading-tight">{val as string}</p>
               </div>
             ))}
           </div>
           
-          <div className="font-light text-[17px] text-[#1A1A1A] leading-snug max-w-none">
+          <div className="font-light text-[18px] text-[#1A1A1A] leading-relaxed max-w-none">
             {project.overview.text}
           </div>
         </header>
@@ -197,39 +220,29 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
             key={section.id} 
             id={section.id} 
             ref={(el) => { sectionRefs.current[section.id] = el; }}
-            className="mb-20 scroll-mt-32"
+            className="mb-24 scroll-mt-32"
           >
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 border-b border-[#F5F4F2] pb-4 leading-tight">
-              {section.title}
-            </h2>
+            <div className="mb-8">
+              <h2 className="text-3xl font-bold tracking-tight mb-2">
+                {section.title}
+              </h2>
+              {section.subtitle && (
+                <h4 className="text-lg font-bold text-[#666] tracking-tight">
+                  {section.subtitle}
+                </h4>
+              )}
+            </div>
             
-            <div className="space-y-4 font-light text-[#1A1A1A] leading-snug text-[17px] max-w-3xl">
-              {Array.isArray(section.content) 
-                ? section.content.map((p, i) => (
-                    <div key={i}>
-                      {p.includes('——————') ? (
-                        <div className="h-px bg-[#F5F4F2] my-4" />
-                      ) : p.startsWith('•') ? (
-                        <div className="flex space-x-2 pl-2">
-                          <span className="opacity-40">•</span>
-                          <span>{p.substring(1).trim()}</span>
-                        </div>
-                      ) : (
-                        <p className={p.includes('Challenges') || p.includes('Insights') || p.includes('Methods') ? 'font-bold mt-2' : ''}>
-                          {p}
-                        </p>
-                      )}
-                    </div>
-                  )) 
-                : <p>{section.content}</p>
-              }
+            <div className={`text-[17px] leading-snug text-[#1A1A1A] max-w-3xl ${section.isBoxed ? 'bg-[#F5F4F2] p-8 rounded-2xl' : ''}`}>
+              {renderContent(section.content)}
             </div>
 
             {section.callout && (
-              <div className="bg-[#F5F4F2] p-8 my-12 border-l-[4px] border-[#1A1A1A] relative group">
-                <p className="text-xl font-bold tracking-tight italic leading-tight">
+              <div className="bg-[#1A1A1A] text-white p-10 my-16 rounded-2xl relative group overflow-hidden">
+                <p className="text-2xl font-bold tracking-tight italic leading-tight relative z-10">
                   "{section.callout}"
                 </p>
+                <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none text-8xl font-bold">"</div>
               </div>
             )}
 
@@ -237,10 +250,10 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
           </section>
         ))}
 
-        <div className="py-20 border-t border-[#F5F4F2] text-center">
-          <p className="text-[10px] uppercase tracking-widest font-bold opacity-30 mb-4">Case Study Conclusion</p>
-          <a href="#/projects" className="text-2xl md:text-4xl font-bold tracking-tighter hover:opacity-50 transition-all underline underline-offset-8 decoration-1">
-            Browse More Projects
+        <div className="py-24 border-t border-[#F5F4F2] text-center">
+          <p className="text-xs uppercase tracking-widest font-bold opacity-30 mb-8">End of Presentation</p>
+          <a href="#/projects" className="text-4xl md:text-6xl font-bold tracking-tighter hover:opacity-50 transition-all underline underline-offset-16 decoration-1">
+            Back to All Projects
           </a>
         </div>
       </div>

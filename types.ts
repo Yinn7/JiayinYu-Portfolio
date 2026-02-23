@@ -18,11 +18,13 @@ export interface ProjectOverview {
 export interface Section {
   id: string;
   title: string;
+  subtitle?: string;
   content: string | string[];
-  imageType?: 'full' | 'centered' | 'side-by-side' | 'grid' | 'half' | 'small';
+  imageType?: 'full' | 'centered' | 'side-by-side' | 'grid' | 'half' | 'small' | 'hero';
   images?: string[];
   captions?: string[];
   callout?: string;
+  isBoxed?: boolean;
 }
 
 export interface Project {
