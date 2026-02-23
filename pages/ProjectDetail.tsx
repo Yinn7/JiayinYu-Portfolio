@@ -35,6 +35,16 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
     };
   }, [project]);
 
+  const parseLine = (text: string) => {
+    const parts = text.split(/(\*\*.*?\*\*)/g);
+    return parts.map((part, i) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return <strong key={i}>{part.slice(2, -2)}</strong>;
+      }
+      return part;
+    });
+  };
+
   const renderContent = (content: string | string[]) => {
     const lines = Array.isArray(content) ? content : [content];
     return lines.map((line, i) => {
@@ -45,13 +55,13 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
         return (
           <div key={i} className="flex items-start space-x-3 mb-2">
             <span className="opacity-40 mt-1">•</span>
-            <span className="flex-1">{line.substring(1).trim()}</span>
+            <span className="flex-1">{parseLine(line.substring(1).trim())}</span>
           </div>
         );
       }
       return (
         <p key={i} className="mb-2 last:mb-0 leading-tight">
-          {line}
+          {parseLine(line)}
         </p>
       );
     });

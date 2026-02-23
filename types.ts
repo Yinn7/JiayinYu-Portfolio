@@ -38,6 +38,13 @@ export interface Project {
   sections: Section[];
 }
 
+export interface Activity {
+  name: string;
+  role: string;
+  images: string[];
+  reflections: string[];
+}
+
 export interface Translations {
   nav: {
     projects: string;
@@ -56,6 +63,12 @@ export interface Translations {
       title: string;
       items: string;
     }[];
+  };
+  activities: {
+    title: string;
+    items: Activity[];
+    roleLabel: string;
+    reflectionLabel: string;
   };
   projectLabels: {
     role: string;

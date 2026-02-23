@@ -80,6 +80,61 @@ const Home: React.FC<HomeProps> = ({ projects, translations }) => {
           ))}
         </div>
       </section>
+
+      <section className="py-24 border-t border-[#F5F4F2]">
+        <h2 className="text-6xl md:text-8xl font-bold tracking-tighter mb-16">
+          {translations.activities.title}
+        </h2>
+        <div className="space-y-32">
+          {translations.activities.items.map((activity, idx) => (
+            <div key={idx} className="space-y-12">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div className="md:col-span-12">
+                  <h3 className="text-4xl font-bold mb-6">{activity.name}</h3>
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="text-sm uppercase tracking-widest font-bold opacity-40 mb-3">
+                        {translations.activities.roleLabel}
+                      </h4>
+                      <p className="text-xl font-light leading-relaxed text-[#333]">
+                        {activity.role}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                {activity.images.map((img, i) => (
+                  <div key={i} className="aspect-video bg-[#F5F4F2] rounded-lg overflow-hidden border border-[#F5F4F2]">
+                    <img 
+                      src={img} 
+                      alt={`${activity.name} photo ${i + 1}`} 
+                      className="w-full h-full object-cover transition-opacity opacity-90 hover:opacity-100"
+                    />
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-[#F5F4F2] p-10 rounded-2xl">
+                <h4 className="text-sm uppercase tracking-widest font-bold opacity-40 mb-6">
+                  {translations.activities.reflectionLabel}
+                </h4>
+                <ul className="space-y-4">
+                  {activity.reflections.map((reflection, i) => (
+                    <li key={i} className="flex items-start space-x-3">
+                      <span className="opacity-40 mt-1">•</span>
+                      <p className="text-lg font-light leading-snug text-[#1A1A1A]">
+                        {reflection}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

@@ -24,6 +24,29 @@ export const translations: Record<'en' | 'zh', Translations> = {
         { title: "Product Thinking", items: "Problem framing · Stakeholder alignment · Feature prioritization · Impact-driven decisions" }
       ]
     },
+    activities: {
+      title: "Activities",
+      roleLabel: "Role / What I Did",
+      reflectionLabel: "Reflections / Learnings",
+      items: [
+        {
+          name: "HuskyAdapt",
+          role: "Participated in a school club project modifying toys for children with disabilities. Original toys had buttons too small or hard to use. Improved by adding external buttons or expanded controls for easier use.",
+          images: [
+            "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
+            "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600",
+            "https://images.unsplash.com/photo-1454165833767-027ffea70250?auto=format&fit=crop&q=80&w=600",
+            "https://images.unsplash.com/photo-1544391682-1a55b9deaad3?auto=format&fit=crop&q=80&w=600"
+          ],
+          reflections: [
+            "Inclusive thinking: design from children's abilities and needs",
+            "Hands-on skills: soldering, circuit troubleshooting, connection checks",
+            "Problem-solving: ensure toy works safely and reliably",
+            "Collaboration: teamwork to complete hardware modifications"
+          ]
+        }
+      ]
+    },
     projectLabels: {
       role: "Role",
       team: "Team",
@@ -57,6 +80,29 @@ export const translations: Record<'en' | 'zh', Translations> = {
         { title: "数据与系统思维", items: "数据可视化 · 筛选系统 · 降低认知负荷 · 基于模式的洞察" },
         { title: "伦理与隐私设计", items: "隐私设计 · 偏见意识决策 · 以人为本的公民思维" },
         { title: "产品思维", items: "问题界定 · 利益相关者对齐 · 功能优先级排序 · 影响力驱动决策" }
+      ]
+    },
+    activities: {
+      title: "活动经历",
+      roleLabel: "角色 / 项目内容",
+      reflectionLabel: "感悟 / 收获",
+      items: [
+        {
+          name: "HuskyAdapt",
+          role: "参加学校社团项目，为残障儿童改装玩具。原始玩具按钮太小或太硬。通过增加外部按钮或扩大控制范围，使玩具更易于使用。",
+          images: [
+            "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
+            "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600",
+            "https://images.unsplash.com/photo-1454165833767-027ffea70250?auto=format&fit=crop&q=80&w=600",
+            "https://images.unsplash.com/photo-1544391682-1a55b9deaad3?auto=format&fit=crop&q=80&w=600"
+          ],
+          reflections: [
+            "包容性思维：基于儿童的能力和需求进行设计",
+            "动手能力：焊接、电路故障排除、连接检查",
+            "解决问题：确保玩具安全可靠运行",
+            "团队协作：分工配合完成硬件改装"
+          ]
+        }
       ]
     },
     projectLabels: {
@@ -279,9 +325,9 @@ const PROJECT_2_EN: Project = {
       title: "Feature 1: Character Photo Import",
       isBoxed: true,
       content: [
-        "Current Problem: Limited character diversity, no way to upload custom images.",
-        "Improvement: Added photo upload with size validation, cropping, keyboard & screen reader accessibility, clear labels, and focus states.",
-        "Accessibility Considerations: Tab order, ARIA labels, screen reader upload feedback."
+        "**Current Problem:** Limited character diversity, no way to upload custom images.",
+        "**Improvement:** Added photo upload with size validation, cropping, keyboard & screen reader accessibility, clear labels, and focus states.",
+        "**Accessibility Considerations:** Tab order, ARIA labels, screen reader upload feedback."
       ],
       imageType: "side-by-side",
       images: [
@@ -295,9 +341,9 @@ const PROJECT_2_EN: Project = {
       title: "Feature 2: Quick Character Search & Favorites",
       isBoxed: true,
       content: [
-        "Current Problem: Discovery relied on hover; no filtering or favorites.",
-        "Improvement: Added keyword-based search, category tags, Favorite Character feature, dedicated browsing area.",
-        "Accessibility Considerations: Fully keyboard-accessible; no hover dependency."
+        "**Current Problem:** Discovery relied on hover; no filtering or favorites.",
+        "**Improvement:** Added keyword-based search, category tags, Favorite Character feature, dedicated browsing area.",
+        "**Accessibility Considerations:** Fully keyboard-accessible; no hover dependency."
       ],
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1618761767630-010461622312?auto=format&fit=crop&q=80&w=1200"],
@@ -308,8 +354,9 @@ const PROJECT_2_EN: Project = {
       title: "Feature 3: Improving the “place()” Function",
       isBoxed: true,
       content: [
-        "Current Problem: Users unclear on parameters and direction.",
-        "Improvement: Added inline explanations, directional selector, clarified labels, improved input accessibility."
+        "**Current Problem:** Users unclear on parameters and direction.",
+        "**Improvement:** Added inline explanations, directional selector, clarified labels, improved input accessibility.",
+        "**Accessibility Considerations:** Better visual feedback and keyboard focus management."
       ],
       imageType: "side-by-side",
       images: [
@@ -323,8 +370,9 @@ const PROJECT_2_EN: Project = {
       title: "Feature 4: Emoji Skin Tone Options",
       isBoxed: true,
       content: [
-        "Current Problem: Single emoji skin tone available.",
-        "Improvement: Added skin tone selector with inclusive workflow, keyboard mapping, and screen reader guidance."
+        "**Current Problem:** Single emoji skin tone available.",
+        "**Improvement:** Added skin tone selector with inclusive workflow, keyboard mapping, and screen reader guidance.",
+        "**Accessibility Considerations:** Selection feedback for screen readers and consistent focus rings."
       ],
       imageType: "full",
       images: ["https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=1200"],
@@ -493,7 +541,12 @@ const PROJECT_2_ZH: Project = {
   homeDescription: "重新设计开源编程平台，为全球学习者提供完整的无障碍支持。",
   sections: PROJECT_2_EN.sections.map(s => ({
     ...s,
-    title: s.title.replace("The Problem", "问题定义").replace("Feature", "功能改进").replace("Impact & Reflection", "影响力与总结")
+    title: s.title.replace("The Problem", "问题定义").replace("Feature", "功能改进").replace("Impact & Reflection", "影响力与总结"),
+    content: Array.isArray(s.content) ? s.content.map(c => 
+      c.replace("**Current Problem:**", "**当前问题：**")
+       .replace("**Improvement:**", "**改进方案：**")
+       .replace("**Accessibility Considerations:**", "**无障碍考量：**")
+    ) : s.content
   }))
 };
 
