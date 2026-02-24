@@ -31,7 +31,7 @@ export const translations: Record<'en' | 'zh', Translations> = {
       items: [
         {
           name: "HuskyAdapt",
-          role: "Timeline: 04/2024 - current\n\nParticipated in a school club project modifying toys for children with disabilities. Original toys had buttons too small or hard to use. Improved by adding external buttons or expanded controls for easier use.",
+          role: "Timeline: 04/2024 - Current\n\nParticipated in a school club project modifying toys for children with disabilities. Original toys had buttons too small or hard to use. Improved by adding external buttons or expanded controls for easier use.",
           images: [
             "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
             "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600",
@@ -134,7 +134,7 @@ const PROJECT_2_EN: Project = {
     tools: "Figma · GitHub Issue Tracking",
     collaboration: "Worked directly with Project Lead",
     team: "Open-source contributors",
-    duration: "01/2025 - current",
+    duration: "01/2025 - Current",
     sector: "Education",
     text: "Wordplay aims to make programming accessible to learners of all ages, backgrounds, and locations. My role focused on redesigning key features and improving accessibility for keyboard and screen reader users."
   },
@@ -545,6 +545,6 @@ const PROJECT_3_ZH: Project = {
   }))
 };
 
-// Reordered: Wordplay (current), UW Pathway (late 2025), Urban Safety (mid 2025)
+// Reordered: Wordplay (Current), UW Pathway (late 2025), Urban Safety (mid 2025)
 export const projects_en: Project[] = [PROJECT_2_EN, PROJECT_1_EN, PROJECT_3_EN];
 export const projects_zh: Project[] = [PROJECT_2_ZH, PROJECT_1_ZH, PROJECT_3_ZH];

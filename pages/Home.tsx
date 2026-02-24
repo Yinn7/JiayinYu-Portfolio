@@ -52,7 +52,7 @@ const Home: React.FC<HomeProps> = ({ projects, translations }) => {
                 </h3>
                 <div className="mb-4">
                   <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-1">{project.title}</h2>
-                  <p className="text-sm md:text-base font-light text-[#888] leading-tight">
+                  <p className="text-4xl md:text-5xl font-light text-[#888] tracking-tight leading-tight">
                     {project.overview.duration.split('\n')[0].replace('-', '–')}
                   </p>
                 </div>
