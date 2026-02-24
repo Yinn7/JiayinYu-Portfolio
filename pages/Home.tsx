@@ -50,7 +50,12 @@ const Home: React.FC<HomeProps> = ({ projects, translations }) => {
                   <span className="w-8 h-px bg-[#1A1A1A] opacity-30"></span>
                   {project.subtitle}
                 </h3>
-                <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">{project.title}</h2>
+                <div className="flex flex-col md:flex-row md:items-baseline md:gap-4 mb-4">
+                  <h2 className="text-4xl md:text-5xl font-bold tracking-tight">{project.title}</h2>
+                  <span className="text-lg md:text-xl font-light text-[#1A1A1A] opacity-30">
+                    {project.overview.duration.split('\n')[0]}
+                  </span>
+                </div>
                 <p className="text-lg font-light text-[#666] leading-relaxed max-w-xl">
                   {project.homeDescription}
                 </p>
