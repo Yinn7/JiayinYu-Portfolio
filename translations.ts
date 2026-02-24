@@ -31,7 +31,7 @@ export const translations: Record<'en' | 'zh', Translations> = {
       items: [
         {
           name: "HuskyAdapt",
-          role: "Participated in a school club project modifying toys for children with disabilities. Original toys had buttons too small or hard to use. Improved by adding external buttons or expanded controls for easier use.",
+          role: "Timeline: 04/2024 - current\n\nParticipated in a school club project modifying toys for children with disabilities. Original toys had buttons too small or hard to use. Improved by adding external buttons or expanded controls for easier use.",
           images: [
             "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
             "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600",
@@ -89,7 +89,7 @@ export const translations: Record<'en' | 'zh', Translations> = {
       items: [
         {
           name: "HuskyAdapt",
-          role: "参加学校社团项目，为残障儿童改装玩具。原始玩具按钮太小或太硬。通过增加外部按钮或扩大控制范围，使玩具更易于使用。",
+          role: "时间线：04/2024 - 至今\n\n参加学校社团项目，为残障儿童改装玩具。原始玩具按钮太小或太硬。通过增加外部按钮或扩大控制范围，使玩具更易于使用。",
           images: [
             "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
             "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600",
@@ -120,6 +120,114 @@ export const translations: Record<'en' | 'zh', Translations> = {
   }
 };
 
+const PROJECT_2_EN: Project = {
+  id: "wordplay",
+  title: "Wordplay",
+  subtitle: "Improving Accessibility & Inclusive Design for a Global Programming Learning Platform",
+  description: "Enhancing usability and inclusivity for a web-based coding education platform.",
+  homeDescription: "Redesigning an open-source coding platform to prioritize accessibility for learners of all ages and backgrounds.",
+  category: ["Accessibility", "Inclusive Design", "Open Source"],
+  overview: {
+    platform: "Wordplay (Open-source coding education website)",
+    role: "UX Designer (Volunteer Contributor)",
+    focus: "Accessibility · Interaction Design · Inclusive Design",
+    tools: "Figma · GitHub Issue Tracking",
+    collaboration: "Worked directly with Project Lead",
+    team: "Open-source contributors",
+    duration: "01/2025 - current",
+    sector: "Education",
+    text: "Wordplay aims to make programming accessible to learners of all ages, backgrounds, and locations. My role focused on redesigning key features and improving accessibility for keyboard and screen reader users."
+  },
+  sections: [
+    {
+      id: "problem",
+      title: "The Problem",
+      subtitle: "Key Challenges",
+      isBoxed: true,
+      content: [
+        "——————",
+        "• Unclear navigation structure",
+        "• Cumbersome interface layout",
+        "• Heavy reliance on hover interactions",
+        "• Limited keyboard support & screen reader compatibility",
+        "• Limited visual diversity (single emoji skin tone)"
+      ],
+      imageType: "full",
+      images: ["https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1200"],
+      captions: ["Annotated original interface screenshot with highlighted issues"]
+    },
+    {
+      id: "feature-1",
+      title: "Feature 1: Character Photo Import",
+      isBoxed: true,
+      content: [
+        "**current problem:** Limited character diversity, no way to upload custom images.",
+        "**improvement:** Added photo upload with size validation, cropping, keyboard & screen reader accessibility, clear labels, and focus states.",
+        "**Accessibility Consideration:** Tab order, ARIA labels, screen reader upload feedback."
+      ],
+      imageType: "side-by-side",
+      images: [
+        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=600"
+      ],
+      captions: ["High-fidelity Photo Import interface", "Cropping workflow & Accessibility annotations"]
+    },
+    {
+      id: "feature-2",
+      title: "Feature 2: Quick Character Search & Favorites",
+      isBoxed: true,
+      content: [
+        "**current problem:** Discovery relied on hover; no filtering or favorites.",
+        "**improvement:** Added keyword-based search, category tags, Favorite Character feature, dedicated browsing area.",
+        "**Accessibility Consideration:** Fully keyboard-accessible; no hover dependency."
+      ],
+      imageType: "full",
+      images: ["https://images.unsplash.com/photo-1618761767630-010461622312?auto=format&fit=crop&q=80&w=1200"],
+      captions: ["Redesigned Character Search & Browsing Interface"]
+    },
+    {
+      id: "feature-3",
+      title: "Feature 3: Improving the “place()” Function",
+      isBoxed: true,
+      content: [
+        "**current problem:** Users unclear on parameters and direction.",
+        "**improvement:** Added inline explanations, directional selector, clarified labels, improved input accessibility.",
+        "**Accessibility Consideration:** Better visual feedback and keyboard focus management."
+      ],
+      imageType: "side-by-side",
+      images: [
+        "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=600"
+      ],
+      captions: ["Left: Original Interface", "Right: Redesigned Interface"]
+    },
+    {
+      id: "feature-4",
+      title: "Feature 4: Emoji Skin Tone Options",
+      isBoxed: true,
+      content: [
+        "**current problem:** Single emoji skin tone available.",
+        "**improvement:** Added skin tone selector with inclusive workflow, keyboard mapping, and screen reader guidance.",
+        "**Accessibility Consideration:** Selection feedback for screen readers and consistent focus rings."
+      ],
+      imageType: "full",
+      images: ["https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=1200"],
+      captions: ["Emoji selection workflow and small detail interaction close-up"]
+    },
+    {
+      id: "reflection",
+      title: "Reflection",
+      isBoxed: true,
+      content: [
+        "• Accessibility must be designed from the start",
+        "• Inclusive design benefits all users",
+        "• Iterative feedback improves solution quality",
+        "• Small UI decisions significantly affect usability"
+      ]
+    }
+  ]
+};
+
 const PROJECT_1_EN: Project = {
   id: "uw-pathway",
   title: "UW Pathway",
@@ -130,7 +238,7 @@ const PROJECT_1_EN: Project = {
   overview: {
     role: "UX Research · Information Architecture · Interaction Design · Prototyping",
     team: "4 members",
-    duration: "7 weeks",
+    duration: "09/2025 - 12/2025\n7 weeks",
     sector: "Education Technology",
     text: "UW Pathway is a skill-based course discovery platform that bridges academic planning and career outcomes by connecting courses, skills, and jobs in one centralized system."
   },
@@ -275,131 +383,6 @@ const PROJECT_1_EN: Project = {
   ]
 };
 
-const PROJECT_2_EN: Project = {
-  id: "wordplay",
-  title: "Wordplay",
-  subtitle: "Improving Accessibility & Inclusive Design for a Global Programming Learning Platform",
-  description: "Enhancing usability and inclusivity for a web-based coding education platform.",
-  homeDescription: "Redesigning an open-source coding platform to prioritize accessibility for learners of all ages and backgrounds.",
-  category: ["Accessibility", "Inclusive Design", "Open Source"],
-  overview: {
-    platform: "Wordplay (Open-source coding education website)",
-    role: "UX Designer (Volunteer Contributor)",
-    focus: "Accessibility · Interaction Design · Inclusive Design",
-    tools: "Figma · GitHub Issue Tracking",
-    collaboration: "Worked directly with Project Lead",
-    team: "Open-source contributors",
-    duration: "Ongoing",
-    sector: "Education",
-    text: "Wordplay aims to make programming accessible to learners of all ages, backgrounds, and locations. My role focused on redesigning key features and improving accessibility for keyboard and screen reader users."
-  },
-  sections: [
-    {
-      id: "problem",
-      title: "The Problem",
-      subtitle: "Key Challenges",
-      isBoxed: true,
-      content: [
-        "——————",
-        "• Unclear navigation structure",
-        "• Cumbersome interface layout",
-        "• Heavy reliance on hover interactions",
-        "• Limited keyboard support & screen reader compatibility",
-        "• Limited visual diversity (single emoji skin tone)"
-      ],
-      imageType: "full",
-      images: ["https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Annotated original interface screenshot with highlighted issues"]
-    },
-    {
-      id: "approach",
-      title: "My Approach",
-      content: [
-        "• Selected GitHub issues to address high-impact accessibility gaps",
-        "• Designed in Figma, iterated via stakeholder review",
-        "• Validated accessibility with keyboard & screen reader checks"
-      ]
-    },
-    {
-      id: "feature-1",
-      title: "Feature 1: Character Photo Import",
-      isBoxed: true,
-      content: [
-        "**Current Problem:** Limited character diversity, no way to upload custom images.",
-        "**Improvement:** Added photo upload with size validation, cropping, keyboard & screen reader accessibility, clear labels, and focus states.",
-        "**Accessibility Considerations:** Tab order, ARIA labels, screen reader upload feedback."
-      ],
-      imageType: "side-by-side",
-      images: [
-        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=600",
-        "https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=600"
-      ],
-      captions: ["High-fidelity Photo Import interface", "Cropping workflow & Accessibility annotations"]
-    },
-    {
-      id: "feature-2",
-      title: "Feature 2: Quick Character Search & Favorites",
-      isBoxed: true,
-      content: [
-        "**Current Problem:** Discovery relied on hover; no filtering or favorites.",
-        "**Improvement:** Added keyword-based search, category tags, Favorite Character feature, dedicated browsing area.",
-        "**Accessibility Considerations:** Fully keyboard-accessible; no hover dependency."
-      ],
-      imageType: "full",
-      images: ["https://images.unsplash.com/photo-1618761767630-010461622312?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Redesigned Character Search & Browsing Interface"]
-    },
-    {
-      id: "feature-3",
-      title: "Feature 3: Improving the “place()” Function",
-      isBoxed: true,
-      content: [
-        "**Current Problem:** Users unclear on parameters and direction.",
-        "**Improvement:** Added inline explanations, directional selector, clarified labels, improved input accessibility.",
-        "**Accessibility Considerations:** Better visual feedback and keyboard focus management."
-      ],
-      imageType: "side-by-side",
-      images: [
-        "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=600",
-        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=600"
-      ],
-      captions: ["Left: Original Interface", "Right: Redesigned Interface"]
-    },
-    {
-      id: "feature-4",
-      title: "Feature 4: Emoji Skin Tone Options",
-      isBoxed: true,
-      content: [
-        "**Current Problem:** Single emoji skin tone available.",
-        "**Improvement:** Added skin tone selector with inclusive workflow, keyboard mapping, and screen reader guidance.",
-        "**Accessibility Considerations:** Selection feedback for screen readers and consistent focus rings."
-      ],
-      imageType: "full",
-      images: ["https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Emoji selection workflow and small detail interaction close-up"]
-    },
-    {
-      id: "localization",
-      title: "Chinese Localization",
-      content: "Translated key interface text to improve clarity and cultural relevance for global learners.",
-      imageType: "small",
-      images: ["https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=400"],
-      captions: ["Before/After localization example"]
-    },
-    {
-      id: "reflection",
-      title: "Reflection",
-      isBoxed: true,
-      content: [
-        "• Accessibility must be designed from the start",
-        "• Inclusive design benefits all users",
-        "• Iterative feedback improves solution quality",
-        "• Small UI decisions significantly affect usability"
-      ]
-    }
-  ]
-};
-
 const PROJECT_3_EN: Project = {
   id: "urban-safety",
   title: "Urban Safety",
@@ -411,7 +394,7 @@ const PROJECT_3_EN: Project = {
     domain: "Urban Data Visualization · UX",
     role: "User Research · Information Architecture · Data Visualization · Privacy Strategy Design",
     team: "4 members",
-    duration: "7 weeks",
+    duration: "03/2025 - 06/2025\n6 weeks",
     context: "INFO 200 Course Project",
     sector: "Civic Tech",
     text: "Urban Safety is a privacy-conscious city safety visualization platform designed to help residents understand neighborhood safety trends without exposing sensitive individual data."
@@ -520,7 +503,7 @@ const PROJECT_3_EN: Project = {
   ]
 };
 
-// Chinese versions
+// Simplified translation helper:
 const PROJECT_1_ZH: Project = {
   ...PROJECT_1_EN,
   title: "UW Pathway (华大课程规划)",
@@ -543,9 +526,9 @@ const PROJECT_2_ZH: Project = {
     ...s,
     title: s.title.replace("The Problem", "问题定义").replace("Feature", "功能改进").replace("Impact & Reflection", "影响力与总结"),
     content: Array.isArray(s.content) ? s.content.map(c => 
-      c.replace("**Current Problem:**", "**当前问题：**")
-       .replace("**Improvement:**", "**改进方案：**")
-       .replace("**Accessibility Considerations:**", "**无障碍考量：**")
+      c.replace("**current problem:**", "**当前问题：**")
+       .replace("**improvement:**", "**改进方案：**")
+       .replace("**Accessibility Consideration:**", "**无障碍考量：**")
     ) : s.content
   }))
 };
@@ -562,5 +545,6 @@ const PROJECT_3_ZH: Project = {
   }))
 };
 
-export const projects_en: Project[] = [PROJECT_1_EN, PROJECT_2_EN, PROJECT_3_EN];
-export const projects_zh: Project[] = [PROJECT_1_ZH, PROJECT_2_ZH, PROJECT_3_ZH];
+// Reordered: Wordplay (current), UW Pathway (late 2025), Urban Safety (mid 2025)
+export const projects_en: Project[] = [PROJECT_2_EN, PROJECT_1_EN, PROJECT_3_EN];
+export const projects_zh: Project[] = [PROJECT_2_ZH, PROJECT_1_ZH, PROJECT_3_ZH];

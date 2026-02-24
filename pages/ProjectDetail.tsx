@@ -25,12 +25,12 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
 
     const refs = sectionRefs.current;
     Object.values(refs).forEach((ref) => {
-      if (ref) observer.observe(ref as Element);
+      if (ref instanceof HTMLElement) observer.observe(ref);
     });
 
     return () => {
       Object.values(refs).forEach((ref) => {
-        if (ref) observer.unobserve(ref as Element);
+        if (ref instanceof HTMLElement) observer.unobserve(ref);
       });
     };
   }, [project]);
@@ -215,7 +215,9 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, translations }) 
                 <h5 className="text-[10px] uppercase tracking-[0.1em] font-bold mb-2 opacity-40">
                   {translations.projectLabels[key as keyof typeof translations.projectLabels] || key}
                 </h5>
-                <p className="text-[13px] font-bold leading-tight">{val as string}</p>
+                <p className="text-[13px] font-bold leading-tight whitespace-pre-line text-center md:text-left">
+                  {val as string}
+                </p>
               </div>
             ))}
           </div>

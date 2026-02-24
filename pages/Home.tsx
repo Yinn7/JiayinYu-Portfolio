@@ -96,7 +96,7 @@ const Home: React.FC<HomeProps> = ({ projects, translations }) => {
                       <h4 className="text-sm uppercase tracking-widest font-bold opacity-40 mb-3">
                         {translations.activities.roleLabel}
                       </h4>
-                      <p className="text-xl font-light leading-relaxed text-[#333]">
+                      <p className="text-xl font-light leading-relaxed text-[#333] whitespace-pre-line">
                         {activity.role}
                       </p>
                     </div>
