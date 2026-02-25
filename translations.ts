@@ -33,7 +33,7 @@ export const translations: Record<'en' | 'zh', Translations> = {
           name: "HuskyAdapt",
           role: "Timeline: 04/2024 - Current\n\nParticipated in a school club project modifying toys for children with disabilities. Original toys had buttons too small or hard to use. Improved by adding external buttons or expanded controls for easier use.",
           images: [
-            "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
+            "D:\\于佳音\\于佳音\\大学\\工作\\Portfolio\\素材\\HuskyAdapt\\HuskyAdapt - 1.MOV",
             "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600",
             "https://images.unsplash.com/photo-1454165833767-027ffea70250?auto=format&fit=crop&q=80&w=600",
             "https://images.unsplash.com/photo-1544391682-1a55b9deaad3?auto=format&fit=crop&q=80&w=600"
@@ -506,42 +506,42 @@ const PROJECT_3_EN: Project = {
 // Simplified translation helper:
 const PROJECT_1_ZH: Project = {
   ...PROJECT_1_EN,
-  title: "UW Pathway (华大课程规划)",
-  subtitle: "通过技能导向规划重新定义课程发现",
+  title: "UW Pathway (UW课程规划)",
+  subtitle: "通过技能规划定义课程路径",
   description: "帮助华盛顿大学的学生自信地选择符合职业目标的课程。",
   homeDescription: "一个以技能为核心的课程发现平台，旨在为华大（UW）学生搭建学术规划与职业发展的桥梁。",
   sections: PROJECT_1_EN.sections.map(s => ({
     ...s,
-    title: s.title.replace("The Problem", "问题背景").replace("Research & Insights", "研究洞察").replace("Product Opportunity", "产品机会").replace("Ideation & Solution", "构思与方案").replace("Information Architecture", "信息架构").replace("Low-Fidelity Prototype", "低保真原型").replace("Usability Testing & Iteration", "可用性测试").replace("Final Design", "最终设计").replace("Reflection", "项目总结")
+    title: s.title.replace("The Problem", "问题背景").replace("Research & Insights", "研究洞察").replace("Product Opportunity", "产品机会").replace("Ideation & Solution", "构思与方案").replace("Information Architecture", "信息架构").replace("Low-Fidelity Prototype", "低保真原型").replace("Usability Testing & Iteration", "可用性测试").replace("Final Design", "最终设计").replace("Reflection", "总结")
   }))
 };
 
 const PROJECT_2_ZH: Project = {
   ...PROJECT_2_EN,
-  title: "Wordplay (编程无障碍设计)",
+  title: "Wordplay (编程无障碍平台)",
   subtitle: "提升全球编程学习平台的无障碍与包容性",
-  description: "增强网页版编程教育平台的易用性与包容性。",
+  description: "增强网页版编程教育平台的可用性与包容性。",
   homeDescription: "重新设计开源编程平台，为全球学习者提供完整的无障碍支持。",
   sections: PROJECT_2_EN.sections.map(s => ({
     ...s,
-    title: s.title.replace("The Problem", "问题定义").replace("Feature", "功能改进").replace("Impact & Reflection", "影响力与总结"),
+    title: s.title.replace("The Problem", "当前问题").replace("Feature", "功能改进").replace("Impact & Reflection", "影响与总结"),
     content: Array.isArray(s.content) ? s.content.map(c => 
       c.replace("**current problem:**", "**当前问题：**")
        .replace("**improvement:**", "**改进方案：**")
-       .replace("**Accessibility Consideration:**", "**无障碍考量：**")
+       .replace("**Accessibility Consideration:**", "**无障碍考虑：**")
     ) : s.content
   }))
 };
 
 const PROJECT_3_ZH: Project = {
   ...PROJECT_3_EN,
-  title: "Urban Safety (城市安全看板)",
+  title: "Urban Safety (城市安全地图)",
   subtitle: "通过隐私保护的数据可视化增强城市安全意识",
   description: "帮助居民在获取安全信息的同时保护个人隐私。",
   homeDescription: "一个注重隐私保护的城市安全仪表盘，通过模糊区域可视化趋势，防止偏见。",
   sections: PROJECT_3_EN.sections.map(s => ({
     ...s,
-    title: s.title.replace("Problem Context", "问题背景").replace("Research & Insights", "研究洞察").replace("Design Strategy", "设计策略").replace("Ideation & Prototyping", "构思原型").replace("Interaction & Filtering", "交互筛选").replace("Final Design", "最终设计").replace("User Testing & Validation", "测试验证").replace("Reflection", "项目总结")
+    title: s.title.replace("Problem Context", "问题背景").replace("Research & Insights", "研究洞察").replace("Design Strategy", "设计策略").replace("Ideation & Prototyping", "构思原型").replace("Interaction & Filtering", "交互筛选").replace("Final Design", "最终设计").replace("User Testing & Validation", "可用性测试").replace("Reflection", "总结")
   }))
 };
 
