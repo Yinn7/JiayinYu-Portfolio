@@ -14,11 +14,6 @@ const Home: React.FC<HomeProps> = ({ projects, translations }) => {
     setIsVisible(true);
   }, []);
 
-  const isVideo = (url: string) => {
-    const extension = url.split('.').pop()?.toLowerCase();
-    return extension === 'mp4' || extension === 'webm' || extension === 'ogg';
-  };
-
   return (
     <div className={`max-w-[960px] mx-auto px-6 py-24 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
       <header className="mb-32">
@@ -115,24 +110,13 @@ const Home: React.FC<HomeProps> = ({ projects, translations }) => {
               </div>
 
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                {activity.images.map((url, i) => (
+                {activity.images.map((img, i) => (
                   <div key={i} className="aspect-video bg-[#F5F4F2] rounded-lg overflow-hidden border border-[#F5F4F2]">
-                    {isVideo(url) ? (
-                      <video 
-                        src={url} 
-                        className="w-full h-full object-cover transition-opacity opacity-90 hover:opacity-100"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                      />
-                    ) : (
-                      <img 
-                        src={url} 
-                        alt={`${activity.name} item ${i + 1}`} 
-                        className="w-full h-full object-cover transition-opacity opacity-90 hover:opacity-100"
-                      />
-                    )}
+                    <img 
+                      src={img} 
+                      alt={`${activity.name} photo ${i + 1}`} 
+                      className="w-full h-full object-cover transition-opacity opacity-90 hover:opacity-100"
+                    />
                   </div>
                 ))}
               </div>
