@@ -33,10 +33,10 @@ export const translations: Record<'en' | 'zh', Translations> = {
           name: "HuskyAdapt",
           role: "Timeline: 04/2024 - Current\n\nParticipated in a school club project modifying toys for children with disabilities. We hacked existing toys—like a planetarium projector, a whale toy, and a ball track—to add large, accessible external buttons, ensuring they are usable for children with limited motor control.",
           images: [
-            "https://drive.google.com/uc?id=1IZ1UI6o85SD4ewvF6DQpV4eDZExqMOor&ext=.jpg",
-            "https://drive.google.com/uc?id=1D3Y_tTP2fD8MESWvSDjQgqpQT1vsbvPO&ext=.mp4",
-            "https://drive.google.com/uc?id=1B-ffOtF_f8XLC3BkST3npd8ZA0W9f2YB&ext=.mp4",
-            "https://drive.google.com/uc?id=1qAjOzVhoeyFHCg_7npftaeESB9kmYobT&ext=.jpg"
+            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt1.jpg",
+            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt2.jpg",
+            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt3.mp4",
+            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt4.mp4"
           ],
           reflections: [
             "Inclusive thinking: design from children's abilities and needs",
@@ -91,13 +91,13 @@ export const translations: Record<'en' | 'zh', Translations> = {
           name: "HuskyAdapt",
           role: "时间线：04/2024 - 至今\n\n参加学校社团项目，为残障儿童改装玩具。我们对现有玩具（如星空投影仪、小鲸鱼玩具和滚球轨道）进行了硬件改装，增加了大型、易触碰的外部开关，确保患有运动障碍的儿童也能轻松使用。",
           images: [
-            "https://drive.google.com/uc?id=1IZ1UI6o85SD4ewvF6DQpV4eDZExqMOor&ext=.jpg",
-            "https://drive.google.com/uc?id=1D3Y_tTP2fD8MESWvSDjQgqpQT1vsbvPO&ext=.mp4",
-            "https://drive.google.com/uc?id=1B-ffOtF_f8XLC3BkST3npd8ZA0W9f2YB&ext=.mp4",
-            "https://drive.google.com/uc?id=1qAjOzVhoeyFHCg_7npftaeESB9kmYobT&ext=.jpg"
+            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt1.jpg",
+            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt2.jpg",
+            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt3.mp4",
+            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt4.mp4"
           ],
           reflections: [
-            "包容性思维：基于儿童的能力 and 需求进行设计",
+            "包容性思维：基于儿童的能力和需求进行设计",
             "动手能力：焊接、电路故障排除和硬件改装",
             "解决问题：将大众市场玩具改装为无障碍开关玩具",
             "团队协作：分工配合确保设备的安全性与可靠性"
@@ -363,7 +363,7 @@ const PROJECT_1_EN: Project = {
       ],
       imageType: "hero",
       images: [
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&get=80&w=1200",
         "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=1200"
       ],
       captions: ["High-fidelity main screen", "Skill filter, Learning path, and Career/job pages"]
