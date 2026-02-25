@@ -33,10 +33,10 @@ export const translations: Record<'en' | 'zh', Translations> = {
           name: "HuskyAdapt",
           role: "Timeline: 04/2024 - Current\n\nParticipated in a school club project modifying toys for children with disabilities. We hacked existing toys—like a planetarium projector, a whale toy, and a ball track—to add large, accessible external buttons, ensuring they are usable for children with limited motor control.",
           images: [
-            "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800", // Tools and electronics
-            "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&q=80&w=800", // Toy track
-            "https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?auto=format&fit=crop&q=80&w=800", // Accessibility button device
-            "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&q=80&w=800"  // Colorful plastic toy
+            "HuskyAdapt - 1.jpg",
+            "HuskyAdapt - 3.mp4",
+            "HuskyAdapt - 4.mp4",
+            "HuskyAdapt - 2.JPG"
           ],
           reflections: [
             "Inclusive thinking: design from children's abilities and needs",
@@ -91,10 +91,10 @@ export const translations: Record<'en' | 'zh', Translations> = {
           name: "HuskyAdapt",
           role: "时间线：04/2024 - 至今\n\n参加学校社团项目，为残障儿童改装玩具。我们对现有玩具（如星空投影仪、小鲸鱼玩具和滚球轨道）进行了硬件改装，增加了大型、易触碰的外部开关，确保患有运动障碍的儿童也能轻松使用。",
           images: [
-            "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800",
-            "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&q=80&w=800",
-            "https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?auto=format&fit=crop&q=80&w=800",
-            "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&q=80&w=800"
+            "HuskyAdapt - 1.jpg",
+            "HuskyAdapt - 3.mp4",
+            "HuskyAdapt - 4.mp4",
+            "HuskyAdapt - 2.JPG"
           ],
           reflections: [
             "包容性思维：基于儿童的能力和需求进行设计",
@@ -161,7 +161,7 @@ const PROJECT_2_EN: Project = {
       title: "Feature 1: Character Photo Import",
       isBoxed: true,
       content: [
-        "**current problem:** Limited character diversity, no way to upload custom images.",
+        "**Current problem:** Limited character diversity, no way to upload custom images.",
         "**improvement:** Added photo upload with size validation, cropping, keyboard & screen reader accessibility, clear labels, and focus states.",
         "**Accessibility Consideration:** Tab order, ARIA labels, screen reader upload feedback."
       ],
@@ -177,7 +177,7 @@ const PROJECT_2_EN: Project = {
       title: "Feature 2: Quick Character Search & Favorites",
       isBoxed: true,
       content: [
-        "**current problem:** Discovery relied on hover; no filtering or favorites.",
+        "**Current problem:** Discovery relied on hover; no filtering or favorites.",
         "**improvement:** Added keyword-based search, category tags, Favorite Character feature, dedicated browsing area.",
         "**Accessibility Consideration:** Fully keyboard-accessible; no hover dependency."
       ],
@@ -190,7 +190,7 @@ const PROJECT_2_EN: Project = {
       title: "Feature 3: Improving the “place()” Function",
       isBoxed: true,
       content: [
-        "**current problem:** Users unclear on parameters and direction.",
+        "**Current problem:** Users unclear on parameters and direction.",
         "**improvement:** Added inline explanations, directional selector, clarified labels, improved input accessibility.",
         "**Accessibility Consideration:** Better visual feedback and keyboard focus management."
       ],
@@ -206,7 +206,7 @@ const PROJECT_2_EN: Project = {
       title: "Feature 4: Emoji Skin Tone Options",
       isBoxed: true,
       content: [
-        "**current problem:** Single emoji skin tone available.",
+        "**Current problem:** Single emoji skin tone available.",
         "**improvement:** Added skin tone selector with inclusive workflow, keyboard mapping, and screen reader guidance.",
         "**Accessibility Consideration:** Selection feedback for screen readers and consistent focus rings."
       ],
@@ -363,7 +363,7 @@ const PROJECT_1_EN: Project = {
       ],
       imageType: "hero",
       images: [
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&get=80&w=1200",
         "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=1200"
       ],
       captions: ["High-fidelity main screen", "Skill filter, Learning path, and Career/job pages"]
@@ -526,7 +526,7 @@ const PROJECT_2_ZH: Project = {
     ...s,
     title: s.title.replace("The Problem", "问题定义").replace("Feature", "功能改进").replace("Impact & Reflection", "影响力与总结"),
     content: Array.isArray(s.content) ? s.content.map(c => 
-      c.replace("**current problem:**", "**当前问题：**")
+      c.replace("**Current problem:**", "**当前问题：**")
        .replace("**improvement:**", "**改进方案：**")
        .replace("**Accessibility Consideration:**", "**无障碍考量：**")
     ) : s.content
