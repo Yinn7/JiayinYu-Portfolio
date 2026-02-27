@@ -33,10 +33,10 @@ export const translations: Record<'en' | 'zh', Translations> = {
           name: "HuskyAdapt",
           role: "Timeline: 04/2024 - Current\n\nParticipated in a school club project modifying toys for children with disabilities. We hacked existing toys—like a planetarium projector, a whale toy, and a ball track—to add large, accessible external buttons, ensuring they are usable for children with limited motor control.",
           images: [
-            "assets/image/huskyadapt/huskyadapt1.jpg",
-            "assets/image/huskyadapt/huskyadapt2.mp4",
-            "assets/image/huskyadapt/huskyadapt3.mp4",
-            "assets/image/huskyadapt/huskyadapt4.JPG"
+            "/assets/image/huskyadapt/huskyadapt1.jpg",
+            "/assets/image/huskyadapt/huskyadapt2.mp4",
+            "/assets/image/huskyadapt/huskyadapt3.mp4",
+            "/assets/image/huskyadapt/huskyadapt4.JPG"
           ],
           reflections: [
             "Inclusive thinking: design from children's abilities and needs",
