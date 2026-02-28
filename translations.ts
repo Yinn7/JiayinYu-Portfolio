@@ -92,9 +92,9 @@ export const translations: Record<'en' | 'zh', Translations> = {
           role: "时间线：04/2024 - 至今\n\n参加学校社团项目，为残障儿童改装玩具。我们对现有玩具（如星空投影仪、小鲸鱼玩具和滚球轨道）进行了硬件改装，增加了大型、易触碰的外部开关，确保患有运动障碍的儿童也能轻松使用。",
           images: [
             "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt1.jpg",
-            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt2.jpg",
+            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt2.mp4",
             "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt3.mp4",
-            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt4.mp4"
+            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt4.JPG"
           ],
           reflections: [
             "包容性思维：基于儿童的能力和需求进行设计",
