@@ -33,10 +33,10 @@ export const translations: Record<'en' | 'zh', Translations> = {
           name: "HuskyAdapt",
           role: "Timeline: 04/2024 - Current\n\nParticipated in a school club project modifying toys for children with disabilities. We hacked existing toys—like a planetarium projector, a whale toy, and a ball track—to add large, accessible external buttons, ensuring they are usable for children with limited motor control.",
           images: [
-            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt1.jpg",
-            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt2.jpg",
-            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt3.mp4",
-            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt4.mp4"
+            "/assets/image/huskyadapt/huskyadapt1.jpg",
+            "/assets/image/huskyadapt/huskyadapt2.jpg",
+            "/assets/image/huskyadapt/huskyadapt3.mp4",
+            "/assets/image/huskyadapt/huskyadapt4.mp4"
           ],
           reflections: [
             "Inclusive thinking: design from children's abilities and needs",
@@ -91,10 +91,10 @@ export const translations: Record<'en' | 'zh', Translations> = {
           name: "HuskyAdapt",
           role: "时间线：04/2024 - 至今\n\n参加学校社团项目，为残障儿童改装玩具。我们对现有玩具（如星空投影仪、小鲸鱼玩具和滚球轨道）进行了硬件改装，增加了大型、易触碰的外部开关，确保患有运动障碍的儿童也能轻松使用。",
           images: [
-            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt1.jpg",
-            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt2.jpg",
-            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt3.mp4",
-            "jiayin-yu---ux-portfolio/assets/image/huskyadapt/huskyadapt4.mp4"
+            "/assets/image/huskyadapt/huskyadapt1.jpg",
+            "/assets/image/huskyadapt/huskyadapt2.jpg",
+            "/assets/image/huskyadapt/huskyadapt3.mp4",
+            "/assets/image/huskyadapt/huskyadapt4.mp4"
           ],
           reflections: [
             "包容性思维：基于儿童的能力和需求进行设计",
@@ -153,7 +153,7 @@ const PROJECT_2_EN: Project = {
         "• Limited visual diversity (single emoji skin tone)"
       ],
       imageType: "full",
-      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/wordplaycover.jpg"],
+      images: ["/assets/image/wordplay/wordplaycover.jpg"],
       captions: ["Wordplay Interface Overview"]
     },
     {
@@ -167,7 +167,7 @@ const PROJECT_2_EN: Project = {
       ],
       imageType: "full",
       images: [
-        "jiayin-yu---ux-portfolio/assets/image/wordplay/character image import.png"
+        "/assets/image/wordplay/character image import.png"
       ],
       captions: ["High-fidelity Photo Import interface"]
     },
@@ -181,7 +181,7 @@ const PROJECT_2_EN: Project = {
         "**Accessibility Consideration:** Fully keyboard-accessible; no hover dependency."
       ],
       imageType: "full",
-      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/quick character search.png"],
+      images: ["/assets/image/wordplay/quick character search.png"],
       captions: ["Redesigned Character Search & Browsing Interface"]
     },
     {
@@ -195,7 +195,7 @@ const PROJECT_2_EN: Project = {
       ],
       imageType: "full",
       images: [
-        "jiayin-yu---ux-portfolio/assets/image/wordplay/place function.png"
+        "/assets/image/wordplay/place function.png"
       ],
       captions: ["Redesigned place() function interface"]
     },
@@ -209,7 +209,7 @@ const PROJECT_2_EN: Project = {
         "**Accessibility Consideration:** Selection feedback for screen readers and consistent focus rings."
       ],
       imageType: "full",
-      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/Emoji skin tone.png"],
+      images: ["/assets/image/wordplay/Emoji skin tone.png"],
       captions: ["Emoji skin tone selection workflow"]
     },
     {
@@ -254,7 +254,7 @@ const PROJECT_1_EN: Project = {
         "• High decision anxiety, especially for freshmen and interdisciplinary students"
       ],
       imageType: "full",
-      images: ["jiayin-yu---ux-portfolio/assets/image/uwpathway/uwpathwaycover.png"],
+      images: ["/assets/image/uwpathway/uwpathwaycover.png"],
       captions: ["UW Pathway Platform Overview"]
     },
     {
@@ -266,7 +266,7 @@ const PROJECT_1_EN: Project = {
         "• Competitive analysis of academic and skill-based platforms"
       ],
       imageType: "centered",
-      images: ["jiayin-yu---ux-portfolio/assets/image/uwpathway/Persona.png"],
+      images: ["/assets/image/uwpathway/Persona.png"],
       captions: ["User Persona Development"]
     },
     {
@@ -303,9 +303,9 @@ const PROJECT_1_EN: Project = {
       content: "We reframed course discovery around skills and career pathways.",
       imageType: "grid",
       images: [
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-1.png",
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-2.png",
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-3.png"
+        "/assets/image/uwpathway/Sketch-1.png",
+        "/assets/image/uwpathway/Sketch-2.png",
+        "/assets/image/uwpathway/Sketch-3.png"
       ],
       captions: ["Sketch 1", "Sketch 2", "Sketch 3"]
     },
@@ -330,7 +330,7 @@ const PROJECT_1_EN: Project = {
       content: "Tested structural clarity before visual refinement.",
       imageType: "full",
       images: [
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Low Fidelity Prototype.png"
+        "/assets/image/uwpathway/Low Fidelity Prototype.png"
       ],
       captions: ["Low-Fidelity Prototype testing structural clarity."]
     },
@@ -364,8 +364,8 @@ const PROJECT_1_EN: Project = {
       ],
       imageType: "side-by-side",
       images: [
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/High Fidelity Prototype -1.png",
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/High Fidelity Prototype -2.png"
+        "/assets/image/uwpathway/High Fidelity Prototype -1.png",
+        "/assets/image/uwpathway/High Fidelity Prototype -2.png"
       ],
       captions: ["High-fidelity main screen", "Skill filter and Career pages"]
     },
@@ -409,7 +409,7 @@ const PROJECT_3_EN: Project = {
         "Users need meaningful safety info without personal data exposure"
       ],
       imageType: "full",
-      images: ["jiayin-yu---ux-portfolio/assets/image/urbansafety/urbansafetycover.jpg"],
+      images: ["/assets/image/urbansafety/urbansafetycover.jpg"],
       captions: ["Urban Safety Dashboard Overview"]
     },
     {
@@ -532,7 +532,7 @@ const PROJECT_1_ZH: Project = {
         "• 决策焦虑感强，尤其是新生和跨学科学生"
       ],
       imageType: "full",
-      images: ["jiayin-yu---ux-portfolio/assets/image/uwpathway/uwpathwaycover.png"],
+      images: ["/assets/image/uwpathway/uwpathwaycover.png"],
       captions: ["UW Pathway 平台概览"]
     },
     {
@@ -544,7 +544,7 @@ const PROJECT_1_ZH: Project = {
         "• 对学术和技能平台进行竞品分析"
       ],
       imageType: "centered",
-      images: ["jiayin-yu---ux-portfolio/assets/image/uwpathway/Persona.png"],
+      images: ["/assets/image/uwpathway/Persona.png"],
       captions: ["用户画像开发"]
     },
     {
@@ -581,9 +581,9 @@ const PROJECT_1_ZH: Project = {
       content: "我们围绕技能和职业路径重新定义了课程发现。",
       imageType: "grid",
       images: [
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-1.png",
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-2.png",
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-3.png"
+        "/assets/image/uwpathway/Sketch-1.png",
+        "/assets/image/uwpathway/Sketch-2.png",
+        "/assets/image/uwpathway/Sketch-3.png"
       ],
       captions: ["草图 1", "草图 2", "草图 3"]
     },
@@ -608,7 +608,7 @@ const PROJECT_1_ZH: Project = {
       content: "在进行视觉优化之前测试结构的清晰度。",
       imageType: "full",
       images: [
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Low Fidelity Prototype.png"
+        "/assets/image/uwpathway/Low Fidelity Prototype.png"
       ],
       captions: ["低保真原型测试结构清晰度。"]
     },
@@ -642,8 +642,8 @@ const PROJECT_1_ZH: Project = {
       ],
       imageType: "side-by-side",
       images: [
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/High Fidelity Prototype -1.png",
-        "jiayin-yu---ux-portfolio/assets/image/uwpathway/High Fidelity Prototype -2.png"
+        "/assets/image/uwpathway/High Fidelity Prototype -1.png",
+        "/assets/image/uwpathway/High Fidelity Prototype -2.png"
       ],
       captions: ["高保真主屏幕", "技能筛选和职业页面"]
     },
@@ -695,7 +695,7 @@ const PROJECT_2_ZH: Project = {
         "• 视觉多样性不足（单一肤色的表情符号）"
       ],
       imageType: "full",
-      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/wordplaycover.jpg"],
+      images: ["/assets/image/wordplay/wordplaycover.jpg"],
       captions: ["Wordplay 界面概览"]
     },
     {
@@ -709,7 +709,7 @@ const PROJECT_2_ZH: Project = {
       ],
       imageType: "full",
       images: [
-        "jiayin-yu---ux-portfolio/assets/image/wordplay/character image import.png"
+        "/assets/image/wordplay/character image import.png"
       ],
       captions: ["高保真照片导入界面"]
     },
@@ -723,7 +723,7 @@ const PROJECT_2_ZH: Project = {
         "**无障碍考量：** 完全支持键盘操作；不依赖悬停。"
       ],
       imageType: "full",
-      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/quick character search.png"],
+      images: ["/assets/image/wordplay/quick character search.png"],
       captions: ["重新设计的角色搜索与浏览界面"]
     },
     {
@@ -737,7 +737,7 @@ const PROJECT_2_ZH: Project = {
       ],
       imageType: "full",
       images: [
-        "jiayin-yu---ux-portfolio/assets/image/wordplay/place function.png"
+        "/assets/image/wordplay/place function.png"
       ],
       captions: ["重新设计的 place() 函数界面"]
     },
@@ -751,7 +751,7 @@ const PROJECT_2_ZH: Project = {
         "**无障碍考量：** 屏幕阅读器的选择反馈和一致的焦点环。"
       ],
       imageType: "full",
-      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/Emoji skin tone.png"],
+      images: ["/assets/image/wordplay/Emoji skin tone.png"],
       captions: ["表情符号选择流程和细节交互特写"]
     },
     {
@@ -793,7 +793,7 @@ const PROJECT_3_ZH: Project = {
         "用户需要有意义的安全信息，但不希望暴露个人数据"
       ],
       imageType: "full",
-      images: ["jiayin-yu---ux-portfolio/assets/image/urbansafety/urbansafetycover.jpg"],
+      images: ["/assets/image/urbansafety/urbansafetycover.jpg"],
       captions: ["城市安全看板概览"]
     },
     {
