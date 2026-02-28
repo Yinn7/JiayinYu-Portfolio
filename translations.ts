@@ -153,8 +153,8 @@ const PROJECT_2_EN: Project = {
         "• Limited visual diversity (single emoji skin tone)"
       ],
       imageType: "full",
-      images: ["https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Annotated original interface screenshot with highlighted issues"]
+      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/wordplaycover.jpg"],
+      captions: ["Wordplay Interface Overview"]
     },
     {
       id: "feature-1",
@@ -165,12 +165,11 @@ const PROJECT_2_EN: Project = {
         "**improvement:** Added photo upload with size validation, cropping, keyboard & screen reader accessibility, clear labels, and focus states.",
         "**Accessibility Consideration:** Tab order, ARIA labels, screen reader upload feedback."
       ],
-      imageType: "side-by-side",
+      imageType: "full",
       images: [
-        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=600",
-        "https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=600"
+        "jiayin-yu---ux-portfolio/assets/image/wordplay/character image import.png"
       ],
-      captions: ["High-fidelity Photo Import interface", "Cropping workflow & Accessibility annotations"]
+      captions: ["High-fidelity Photo Import interface"]
     },
     {
       id: "feature-2",
@@ -182,7 +181,7 @@ const PROJECT_2_EN: Project = {
         "**Accessibility Consideration:** Fully keyboard-accessible; no hover dependency."
       ],
       imageType: "full",
-      images: ["https://images.unsplash.com/photo-1618761767630-010461622312?auto=format&fit=crop&q=80&w=1200"],
+      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/quick character search.png"],
       captions: ["Redesigned Character Search & Browsing Interface"]
     },
     {
@@ -194,12 +193,11 @@ const PROJECT_2_EN: Project = {
         "**improvement:** Added inline explanations, directional selector, clarified labels, improved input accessibility.",
         "**Accessibility Consideration:** Better visual feedback and keyboard focus management."
       ],
-      imageType: "side-by-side",
+      imageType: "full",
       images: [
-        "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=600",
-        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=600"
+        "jiayin-yu---ux-portfolio/assets/image/wordplay/place function.png"
       ],
-      captions: ["Left: Original Interface", "Right: Redesigned Interface"]
+      captions: ["Redesigned place() function interface"]
     },
     {
       id: "feature-4",
@@ -211,8 +209,8 @@ const PROJECT_2_EN: Project = {
         "**Accessibility Consideration:** Selection feedback for screen readers and consistent focus rings."
       ],
       imageType: "full",
-      images: ["https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Emoji selection workflow and small detail interaction close-up"]
+      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/Emoji skin tone.png"],
+      captions: ["Emoji skin tone selection workflow"]
     },
     {
       id: "reflection",
@@ -256,8 +254,8 @@ const PROJECT_1_EN: Project = {
         "• High decision anxiety, especially for freshmen and interdisciplinary students"
       ],
       imageType: "full",
-      images: ["https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["User journey map or visual summary of student pain points"]
+      images: ["jiayin-yu---ux-portfolio/assets/image/uwpathway/uwpathwaycover.png"],
+      captions: ["UW Pathway Platform Overview"]
     },
     {
       id: "research",
@@ -268,8 +266,8 @@ const PROJECT_1_EN: Project = {
         "• Competitive analysis of academic and skill-based platforms"
       ],
       imageType: "centered",
-      images: ["https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600"],
-      captions: ["Photo of interview process"]
+      images: ["jiayin-yu---ux-portfolio/assets/image/uwpathway/Persona.png"],
+      captions: ["User Persona Development"]
     },
     {
       id: "insights",
@@ -303,9 +301,13 @@ const PROJECT_1_EN: Project = {
       id: "solution",
       title: "Ideation & Solution",
       content: "We reframed course discovery around skills and career pathways.",
-      imageType: "full",
-      images: ["https://images.unsplash.com/photo-1544391682-1a55b9deaad3?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Brainstorm sketches. \"We explored multiple solution directions before converging on a skill-centered discovery model.\""]
+      imageType: "grid",
+      images: [
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-1.png",
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-2.png",
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-3.png"
+      ],
+      captions: ["Sketch 1", "Sketch 2", "Sketch 3"]
     },
     {
       id: "architecture",
@@ -326,12 +328,11 @@ const PROJECT_1_EN: Project = {
       id: "prototype",
       title: "Low-Fidelity Prototype",
       content: "Tested structural clarity before visual refinement.",
-      imageType: "side-by-side",
+      imageType: "full",
       images: [
-        "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?auto=format&fit=crop&q=80&w=600",
-        "https://images.unsplash.com/photo-1586717796440-9620ed7a06a1?auto=format&fit=crop&q=80&w=600"
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Low Fidelity Prototype.png"
       ],
-      captions: ["Hypothesis: If skills are visible as tags, students can evaluate relevance faster."]
+      captions: ["Low-Fidelity Prototype testing structural clarity."]
     },
     {
       id: "testing",
@@ -361,12 +362,12 @@ const PROJECT_1_EN: Project = {
         "• Compare job paths",
         "• Plan confidently"
       ],
-      imageType: "hero",
+      imageType: "side-by-side",
       images: [
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&get=80&w=1200",
-        "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=1200"
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/High Fidelity Prototype -1.png",
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/High Fidelity Prototype -2.png"
       ],
-      captions: ["High-fidelity main screen", "Skill filter, Learning path, and Career/job pages"]
+      captions: ["High-fidelity main screen", "Skill filter and Career pages"]
     },
     {
       id: "reflection",
@@ -408,8 +409,8 @@ const PROJECT_3_EN: Project = {
         "Users need meaningful safety info without personal data exposure"
       ],
       imageType: "full",
-      images: ["https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["Annotated screenshot of existing apps highlighting privacy risks"]
+      images: ["jiayin-yu---ux-portfolio/assets/image/urbansafety/urbansafetycover.jpg"],
+      captions: ["Urban Safety Dashboard Overview"]
     },
     {
       id: "insights",
@@ -531,8 +532,8 @@ const PROJECT_1_ZH: Project = {
         "• 决策焦虑感强，尤其是新生和跨学科学生"
       ],
       imageType: "full",
-      images: ["https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["用户旅程图或学生痛点视觉总结"]
+      images: ["jiayin-yu---ux-portfolio/assets/image/uwpathway/uwpathwaycover.png"],
+      captions: ["UW Pathway 平台概览"]
     },
     {
       id: "research",
@@ -543,8 +544,8 @@ const PROJECT_1_ZH: Project = {
         "• 对学术和技能平台进行竞品分析"
       ],
       imageType: "centered",
-      images: ["https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600"],
-      captions: ["访谈过程照片"]
+      images: ["jiayin-yu---ux-portfolio/assets/image/uwpathway/Persona.png"],
+      captions: ["用户画像开发"]
     },
     {
       id: "insights",
@@ -578,9 +579,13 @@ const PROJECT_1_ZH: Project = {
       id: "solution",
       title: "构思与方案",
       content: "我们围绕技能和职业路径重新定义了课程发现。",
-      imageType: "full",
-      images: ["https://images.unsplash.com/photo-1544391682-1a55b9deaad3?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["头脑风暴草图。“在收敛到以技能为中心的发现模型之前，我们探索了多个解决方案方向。”"]
+      imageType: "grid",
+      images: [
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-1.png",
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-2.png",
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Sketch-3.png"
+      ],
+      captions: ["草图 1", "草图 2", "草图 3"]
     },
     {
       id: "architecture",
@@ -601,12 +606,11 @@ const PROJECT_1_ZH: Project = {
       id: "prototype",
       title: "低保真原型",
       content: "在进行视觉优化之前测试结构的清晰度。",
-      imageType: "side-by-side",
+      imageType: "full",
       images: [
-        "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?auto=format&fit=crop&q=80&w=600",
-        "https://images.unsplash.com/photo-1586717796440-9620ed7a06a1?auto=format&fit=crop&q=80&w=600"
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/Low Fidelity Prototype.png"
       ],
-      captions: ["假设：如果技能以标签形式可见，学生可以更快地评估相关性。"]
+      captions: ["低保真原型测试结构清晰度。"]
     },
     {
       id: "testing",
@@ -636,12 +640,12 @@ const PROJECT_1_ZH: Project = {
         "• 比较职业路径",
         "• 自信地进行规划"
       ],
-      imageType: "hero",
+      imageType: "side-by-side",
       images: [
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&get=80&w=1200",
-        "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=1200"
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/High Fidelity Prototype -1.png",
+        "jiayin-yu---ux-portfolio/assets/image/uwpathway/High Fidelity Prototype -2.png"
       ],
-      captions: ["高保真主屏幕", "技能筛选、学习路径和职业/职位页面"]
+      captions: ["高保真主屏幕", "技能筛选和职业页面"]
     },
     {
       id: "reflection",
@@ -691,8 +695,8 @@ const PROJECT_2_ZH: Project = {
         "• 视觉多样性不足（单一肤色的表情符号）"
       ],
       imageType: "full",
-      images: ["https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["标注了问题的原始界面截图"]
+      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/wordplaycover.jpg"],
+      captions: ["Wordplay 界面概览"]
     },
     {
       id: "feature-1",
@@ -703,12 +707,11 @@ const PROJECT_2_ZH: Project = {
         "**改进方案：** 增加了带有尺寸验证、裁剪、键盘和屏幕阅读器无障碍支持的照片上传功能，并配有清晰的标签和焦点状态。",
         "**无障碍考量：** 选项卡顺序、ARIA 标签、屏幕阅读器上传反馈。"
       ],
-      imageType: "side-by-side",
+      imageType: "full",
       images: [
-        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=600",
-        "https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=600"
+        "jiayin-yu---ux-portfolio/assets/image/wordplay/character image import.png"
       ],
-      captions: ["高保真照片导入界面", "裁剪流程与无障碍标注"]
+      captions: ["高保真照片导入界面"]
     },
     {
       id: "feature-2",
@@ -720,7 +723,7 @@ const PROJECT_2_ZH: Project = {
         "**无障碍考量：** 完全支持键盘操作；不依赖悬停。"
       ],
       imageType: "full",
-      images: ["https://images.unsplash.com/photo-1618761767630-010461622312?auto=format&fit=crop&q=80&w=1200"],
+      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/quick character search.png"],
       captions: ["重新设计的角色搜索与浏览界面"]
     },
     {
@@ -732,12 +735,11 @@ const PROJECT_2_ZH: Project = {
         "**改进方案：** 增加了内联说明、方向选择器、明确的标签，并改进了输入无障碍性。",
         "**无障碍考量：** 更好的视觉反馈和键盘焦点管理。"
       ],
-      imageType: "side-by-side",
+      imageType: "full",
       images: [
-        "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=600",
-        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=600"
+        "jiayin-yu---ux-portfolio/assets/image/wordplay/place function.png"
       ],
-      captions: ["左：原始界面", "右：重新设计的界面"]
+      captions: ["重新设计的 place() 函数界面"]
     },
     {
       id: "feature-4",
@@ -749,7 +751,7 @@ const PROJECT_2_ZH: Project = {
         "**无障碍考量：** 屏幕阅读器的选择反馈和一致的焦点环。"
       ],
       imageType: "full",
-      images: ["https://images.unsplash.com/photo-1614332284142-f9026362d22d?auto=format&fit=crop&q=80&w=1200"],
+      images: ["jiayin-yu---ux-portfolio/assets/image/wordplay/Emoji skin tone.png"],
       captions: ["表情符号选择流程和细节交互特写"]
     },
     {
@@ -791,8 +793,8 @@ const PROJECT_3_ZH: Project = {
         "用户需要有意义的安全信息，但不希望暴露个人数据"
       ],
       imageType: "full",
-      images: ["https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?auto=format&fit=crop&q=80&w=1200"],
-      captions: ["标注了现有应用隐私风险的截图"]
+      images: ["jiayin-yu---ux-portfolio/assets/image/urbansafety/urbansafetycover.jpg"],
+      captions: ["城市安全看板概览"]
     },
     {
       id: "insights",
